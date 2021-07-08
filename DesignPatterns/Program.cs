@@ -7,7 +7,7 @@ namespace DesignPatterns
         static void Main(string[] args)
         {
             const string splitter = "------------------------------";
-            IClient[] clients = { new AbstractFactory.Client(), new Adapter.Client(), new Facade.Client() };
+            IClient[] clients = { new AbstractFactory.Client(), new Adapter.Client(), new Facade.Client(), new Singleton.Client()};
             foreach (IClient client in  clients)
             {
                 Console.WriteLine(splitter);
