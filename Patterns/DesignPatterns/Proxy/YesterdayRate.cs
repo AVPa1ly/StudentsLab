@@ -2,7 +2,7 @@
 {
     public class YesterdayRate : IYesterdayRate
     {
-        private int rate;
+        private readonly int rate;
 
         public YesterdayRate(int value)
         {

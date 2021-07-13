@@ -5,8 +5,8 @@ namespace DesignPatterns.Proxy
 {
     public class Proxy: IYesterdayRate
     {
-        private IYesterdayRate service;
-        private Dictionary<DateTime, int> cache;
+        private readonly IYesterdayRate service;
+        private readonly Dictionary<DateTime, int> cache;
 
         public Proxy(IYesterdayRate externalService, Dictionary<DateTime, int> externalCache)
         {
