@@ -1,0 +1,32 @@
+@import url('http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext');
+
+.logo {
+    display: flex;
+}
+
+.logo__site-name {
+    font-family: 'Lato';
+}
+
+.logo__site-name > * {
+    margin: 1px 0px;
+}
+
+.logo__site-name_colored {
+    color: #f77462;
+    font-weight: lighter;
+    margin-left: 0.5ex;
+}
+
+.logo__picture {
+    height: 46px;
+    width: 54px;
+    align-self: center;
+    margin-right: 19px;
+    margin-left: 29px;
+}
+
+.logo__caption {
+    color: #929292;
+    font-size: small;
+}
