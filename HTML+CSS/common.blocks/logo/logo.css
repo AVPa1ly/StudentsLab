@@ -4,12 +4,9 @@
     display: flex;
 }
 
-.logo__site-name {
+.logo__title {
     font-family: 'Lato';
-}
-
-.logo__site-name > * {
-    margin: 1px 0px;
+    margin-left: 20px;
 }
 
 .logo__site-name_colored {
@@ -22,11 +19,13 @@
     height: 46px;
     width: 54px;
     align-self: center;
-    margin-right: 19px;
-    margin-left: 29px;
 }
 
 .logo__caption {
     color: #929292;
     font-size: small;
+}
+
+.logo__site-name {
+    margin: 1px auto;
 }

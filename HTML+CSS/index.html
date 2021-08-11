@@ -15,6 +15,10 @@
         <link href="common.blocks/logo/logo.css" rel="stylesheet">
         <link href="common.blocks/menu/menu.css" rel="stylesheet">
         <link href="common.blocks/main/main.css" rel="stylesheet">
+        <link href="common.blocks/showcase/showcase.css" rel="stylesheet">
+        <link href="common.blocks/button/button.css" rel="stylesheet">
+        <link href="common.blocks/topics/topics.css" rel="stylesheet">
+        <link href="common.blocks/pictured-article/pictured-article.css" rel="stylesheet">
     </head>
     <body>
         <!-- <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -38,9 +42,9 @@
         <header class="header">
             <div class="logo header__logo">
                 <img class="logo__picture" src="images/pplane.png" alt="Company logo">
-                <div class="logo__title logo__site-name">
-                    <h2>Site<span class="logo__site-name_colored logo__site-name_weigth_lighter">Name</span></h2>
-                    <p class="logo__caption">your caption here</p>
+                <div class="logo__title">
+                    <h2 class="logo__site-name">Site<span class="logo__site-name_colored">Name</span></h2>
+                    <span class="logo__caption">your caption here</span>
                 </div>
             </div>
             <nav>
@@ -56,36 +60,47 @@
 
         <main class="main">
             <div class="showcase">
-                <img src="images/phone.png" alt="Your phone image">
-                <div>
-                    <h2>Lorem ipsum dolor sit amet</h2> <!-- Element -->
-                    <h1>Donec nec justo eget</h1> <!-- Element -->
-                    <p>Morbi in sem quis dui placerat ornare. Pellentesque odio
-                        euismod in, pharetra a, ultricies in, diam. </p> <!-- Block -->
-                    <button>MORE INFO</button> <!-- Block-->
+                <img class="showcase__picture" src="images/phone.png" alt="Your phone image">
+                <div class="showcase__info">
+                    <h2 class="showcase__subtitle">Lorem ipsum dolor sit amet</h2>
+                    <h1 class="showcase__title">Donec nec justo eget</h1>
+                    <p class="showcase__text">Morbi in sem quis dui placerat ornare. Pellentesque odio euismod in, pharetra a, ultricies in, diam. </p>
+                    <button class="button showcase__button">MORE INFO</button>
                 </div>
             </div>
     
-            <section>
-                <div>
-                    <img src="images/flag.png" alt="Flag image">
-                    <h3>Ausce Cellentes </h3>
-                    <p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique</p>
-                    <a>Read More</a>
+            <section class="topics topics_theme_light">
+                <div class="pictured-article">
+                    <div class="pictured-article__image-container">
+                        <img class="pictured-article_image_flag" src="images/flag.png" alt="Flag image">
+                    </div>
+                    <div class="pictured-article__content">
+                        <h3>Ausce Cellentes </h3>
+                        <p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique</p>
+                        <a>Read More</a>
+                    </div>
                 </div>
                 
-                <div>
-                    <img src="images/camera.png" alt="Camera image">
-                    <h3>Vestibul auctor</h3>
-                    <p>Loasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique</p>
-                    <a>Read More</a>
+                <div class="pictured-article">
+                    <div class="pictured-article__image-container">
+                        <img class="pictured-article_image_camera" src="images/camera.png" alt="Camera image">
+                    </div>
+                    <div class="pictured-article__content">
+                        <h3>Vestibul auctor</h3>
+                        <p>Loasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique</p>
+                        <a>Read More</a>
+                    </div>
                 </div>
     
-                <div>
-                    <img src="images/home.png" alt="Home image">
-                    <h3>Cras ornare</h3>
-                    <p>Simasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique</p>
-                    <a>Read More</a>
+                <div class="pictured-article">
+                    <div class="pictured-article__image-container ">
+                        <img class="pictured-article_image_home" src="images/home.png" alt="Home image">
+                    </div>
+                    <div class="pictured-article__content">
+                        <h3>Cras ornare</h3>
+                        <p>Simasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique</p>
+                        <a>Read More</a>
+                    </div>
                 </div>
             </section>
     

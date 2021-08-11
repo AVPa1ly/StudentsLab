@@ -1,11 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900');
+
 .showcase {
-    background-color: linear-gradient(white, #e7e7e7);
+    background: linear-gradient(#e7e7e7, white);
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
 .showcase__picture {
-    
+    width: 380px;
+    height: 348px;
+    align-self: flex-end;
+    margin-top: 50px;
+}
+
+.showcase__subtitle {
+    font-weight: normal;
+    color: #003d48;
+}
+
+.showcase__title {
+    font-weight: bold;
+    color: #003d48;
+    text-transform: uppercase;
+}
+
+.showcase__text {
+    font-size: 17px;
+    color: #8b8b8b;
+}
+
+.showcase__info {
+    width: 40%;
+}
+
+.showcase__button {
+    margin-top: 10px;
 }

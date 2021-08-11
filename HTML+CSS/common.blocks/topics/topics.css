@@ -1,0 +1,11 @@
+.topics {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+.topics_theme_light {
+    background-color: #6dc5dd;
+    color: white;
+}
