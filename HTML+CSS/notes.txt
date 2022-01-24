@@ -1,5 +1,0 @@
-Fonts:
-- https://fonts.google.com/specimen/Lato - for Site Name your caption here
-- https://fonts.google.com/specimen/Source+Sans+Pro#standard-styles - the rest of the document (bold, regular and light)
-
-SVGs:
