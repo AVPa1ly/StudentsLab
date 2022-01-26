@@ -1,0 +1,16 @@
+.link {
+    text-decoration: none;
+}
+
+.link_navbar {
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 80px;
+    min-height: 80px;
+    min-width: 75px;
+}
+
+.link_navbar:hover {
+    background-color: #e84c3d;
+}
