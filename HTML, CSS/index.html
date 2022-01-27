@@ -17,12 +17,15 @@
         <link href="common.blocks/text/text_color.css" rel="stylesheet">
         <link href="common.blocks/navbar/navbar.css" rel="stylesheet">
         <link href="common.blocks/link/link.css" rel="stylesheet">
+        <link href="common.blocks/heading/heading.css" rel="stylesheet">
+        <link href="common.blocks/carousel/carousel.css" rel="stylesheet">
+        <link href="common.blocks/button/button.css" rel="stylesheet">
     </head>
     </head>
     <body>
         <header class="header">
-            <div class="content-block">
-                <p class="text text_font_fjalla text_size_sitename text_color_light">Site Name</p>
+            <div class="content-block header__content-block">
+                <p class="heading text text_font_fjalla text_size_sitename text_color_light">Site Name</p>
                 <nav>
                     <ul class="navbar">
                         <li class="navbar__item">
@@ -45,10 +48,10 @@
             </div>
         </header>
         <main>
-            <section>
-                <div>
-                    <button></button>
-                    <button></button>
+            <section class="carousel">
+                <div class="content-block carousel__content-block">
+                    <button class="button carousel__button carousel__button_left button_color_red">A</button>
+                    <button class="button carousel__button carousel__button_right button_color_red">A</button>
                 </div>
             </section>
         </main>

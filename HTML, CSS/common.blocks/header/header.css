@@ -1,4 +1,8 @@
 .header {
     background-color: #202628;
-    overflow: hidden;
+}
+
+.header__content-block {
+    justify-content: space-between;
+    align-items: center;
 }

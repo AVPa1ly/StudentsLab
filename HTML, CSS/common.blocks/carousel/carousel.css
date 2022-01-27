@@ -1,0 +1,32 @@
+.carousel {
+    background-image: url("../../static/women.jpg");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 560px;
+}
+
+.carousel__content-block {
+    justify-content: start;
+    align-items: flex-end;
+}
+
+.carousel__button {
+    font-size: 18px;
+    box-sizing: border-box;
+    height: 70px;
+    width: 34px;
+}
+
+.carousel__button_left {
+    padding: 24px 8px 24px 16px;
+    margin-right: 1px;
+    border-bottom-left-radius: 70px;
+    border-top-left-radius: 70px;
+}
+
+.carousel__button_right {
+    padding: 24px 16px 24px 8px;
+    border-bottom-right-radius: 70px;
+    border-top-right-radius: 70px;
+}
+
