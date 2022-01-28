@@ -1,0 +1,14 @@
+.items-pannel {
+    background-color: #e7e7e7;
+}
+
+.items-pannel__content-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0; 
+}
+
+.items-pannel__header {
+    margin-top: 0;
+}

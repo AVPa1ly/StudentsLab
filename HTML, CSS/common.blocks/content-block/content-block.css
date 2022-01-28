@@ -1,6 +1,5 @@
 .content-block {
-    display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 50%; /* TODO */
+    width: 1170px; /* TODO */
 }

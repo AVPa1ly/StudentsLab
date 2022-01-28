@@ -8,3 +8,16 @@
 .navbar__item {
     float: left;
 }
+
+.navbar__link {
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 80px;
+    min-height: 80px;
+    min-width: 75px;
+}
+
+.navbar__link:hover {
+    background-color: #e84c3d;
+}

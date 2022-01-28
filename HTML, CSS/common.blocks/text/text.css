@@ -1,3 +1,14 @@
 .text {
     font-weight: normal;
 }
+
+.text_style_heading {
+    text-transform: uppercase;
+}
+
+.text_style_paragraph {
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}

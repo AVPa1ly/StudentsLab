@@ -1,0 +1,42 @@
+.round-pannel {
+    float: left;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.round-pannel_size_small {
+    width: 43px;
+    height: 43px;
+}
+
+.round-pannel_size_medium {
+    width: 70px;
+    height: 70px;
+}
+
+.round-pannel_size_huge {
+    width: 355px;
+    height: 355px;
+}
+
+.round-pannel_color_red {
+    background-color: #e84c3d;
+}
+
+.round-pannel_color_black {
+    background-color: #202628;
+}
+
+.round-pannel__rocket {
+    padding: 21px 22px;
+}
+
+.round-pannel__shield {
+    padding: 21px 25px;
+}
+
+.round-pannel__fire-extinguisher {
+    padding: 21px 24px;
+}

@@ -5,3 +5,24 @@
 .text_size_menu {
     font-size: 13px;
 }
+
+.text_size_carousel-heading {
+    font-size: 31px;
+    letter-spacing: 0.07em;
+}
+
+.text_size_carousel-link {
+    font-size: 15px;
+}
+
+.text_size_main-heading {
+    font-size: 21px;
+}
+
+.text_size_main-paragraph {
+    font-size: 14px;
+}
+
+.text_size_subscription-paragraph {
+    font-size: 16px;
+}

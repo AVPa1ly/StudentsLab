@@ -1,62 +1,137 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="AVPa1ly">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sample page</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-        <link href="normalize.css" rel="stylesheet">
-        <link href="common.blocks/content-block/content-block.css" rel="stylesheet">
-        <link href="common.blocks/header/header.css" rel="stylesheet">
-        <link href="common.blocks/text/text.css" rel="stylesheet">
-        <link href="common.blocks/text/text_font.css" rel="stylesheet">
-        <link href="common.blocks/text/text_size.css" rel="stylesheet">
-        <link href="common.blocks/text/text_color.css" rel="stylesheet">
-        <link href="common.blocks/navbar/navbar.css" rel="stylesheet">
-        <link href="common.blocks/link/link.css" rel="stylesheet">
-        <link href="common.blocks/heading/heading.css" rel="stylesheet">
-        <link href="common.blocks/carousel/carousel.css" rel="stylesheet">
-        <link href="common.blocks/button/button.css" rel="stylesheet">
-    </head>
-    </head>
-    <body>
-        <header class="header">
-            <div class="content-block header__content-block">
-                <p class="heading text text_font_fjalla text_size_sitename text_color_light">Site Name</p>
-                <nav>
-                    <ul class="navbar">
-                        <li class="navbar__item">
-                            <a href="#" class="link link_navbar text_color_light text_font_fjalla text_size_menu">Home</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="link link_navbar text_color_light text_font_fjalla text_size_menu">About</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="link link_navbar text_color_light text_font_fjalla text_size_menu">Services</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="link link_navbar text_color_light text_font_fjalla text_size_menu">Portfolio</a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" class="link link_navbar text_color_light text_font_fjalla text_size_menu">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <section class="carousel">
-                <div class="content-block carousel__content-block">
-                    <button class="button carousel__button carousel__button_left button_color_red">A</button>
-                    <button class="button carousel__button carousel__button_right button_color_red">A</button>
-                </div>
-            </section>
-        </main>
-        <footer>
 
-        </footer>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="AVPa1ly">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="common.blocks/content-block/content-block.css" rel="stylesheet">
+    <link href="common.blocks/header/header.css" rel="stylesheet">
+    <link href="common.blocks/text/text.css" rel="stylesheet">
+    <link href="common.blocks/text/text_font.css" rel="stylesheet">
+    <link href="common.blocks/text/text_size.css" rel="stylesheet">
+    <link href="common.blocks/text/text_color.css" rel="stylesheet">
+    <link href="common.blocks/navbar/navbar.css" rel="stylesheet">
+    <link href="common.blocks/link/link.css" rel="stylesheet">
+    <link href="common.blocks/carousel/carousel.css" rel="stylesheet">
+    <link href="common.blocks/button/button.css" rel="stylesheet">
+    <link href="common.blocks/items-pannel/items-pannel.css" rel="stylesheet">
+    <link href="common.blocks/round-pannel/round-pannel.css" rel="stylesheet">
+    <link href="common.blocks/text-wrapper/text-wrapper.css" rel="stylesheet">
+    <link href="common.blocks/text-wrapper/text-wrapper.css" rel="stylesheet">
+</head>
+</head>
+
+<body>
+    <header class="header">
+        <div class="content-block header__content-block">
+            <p class="text text_style_heading text_font_fjalla text_size_sitename text_color_light">Site Name</p>
+            <nav>
+                <ul class="navbar">
+                    <li class="navbar__item">
+                        <a href="#"
+                            class="link navbar__link text text_style_heading text_color_light text_font_fjalla text_size_menu">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#"
+                            class="link navbar__link text text_style_heading  text_color_light text_font_fjalla text_size_menu">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#"
+                            class="link navbar__link text text_style_heading  text_color_light text_font_fjalla text_size_menu">Services</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#"
+                            class="link navbar__link text text_style_heading  text_color_light text_font_fjalla text_size_menu">Portfolio</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#"
+                            class="link navbar__link text text_style_heading  text_color_light text_font_fjalla text_size_menu">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="carousel">
+            <div class="content-block carousel__content-block">
+                <button name="carousel-left" type="button"
+                    class="button carousel__button carousel__button-left button_color_red">
+                </button>
+                <button name="carousel-right" type="button"
+                    class="button carousel__button carousel__button-right button_color_red">
+                </button>
+                <h2
+                    class="carousel__text carousel__text-with-line text text_style_heading text_color_light text_font_fjalla text_size_carousel-heading">
+                    Clivuam tinc</h2>
+                <h2
+                    class="carousel__text text text_style_heading text_color_light text_font_fjalla text_size_carousel-heading">
+                    Nunc dignissim risus id metus</h2>
+                <a href="#"
+                    class="link text text_color_red text_font_fjalla text_size_carousel-link">http://wallpaperswide.com/</a>
+            </div>
+        </section>
+        <section class="items-pannel">
+            <div class="content-block items-pannel__content-block">
+                <div class="text-wrapper">
+                    <article class="round-pannel round-pannel_size_medium round-pannel_color_red"><img
+                            src="icons/rocket.svg" alt="Rocket" class="round-pannel__rocket"></img></div>
+                    <div class="text-wrapper__block-wrapper">
+                        <h3
+                            class="items-pannel__header text text_style_heading text_size_main-heading text_color_dark text_font_fjalla">
+                            Aliquam tincidunt</h3>
+                        <p class="text text_style_paragraph text_size_main-paragraph text_color_grey text_font_lato">Donec nec justo eget
+                            felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
+                            pellentesq<a href="#"
+                                class="link link_type_inline text text_color_red text_size_main-paragraph text_font_lato">=>
+                                more</a></p>
+                    </div>
+                </div>
+                <div class="text-wrapper">
+                    <div class="round-pannel round-pannel_size_medium round-pannel_color_red"><img
+                            src="icons/shield.svg" alt="Shield" class="round-pannel__shield"></img></div>
+                    <article class="text-wrapper__block-wrapper">
+                        <h3
+                            class="items-pannel__header text text_style_heading text_size_main-heading text_color_dark text_font_fjalla">
+                            Cras ornare tristiqu</h3>
+                        <p class="text text_style_paragraph text_size_main-paragraph text_color_grey text_font_lato">Jonec nec justo eget
+                            felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean
+                            dignissim pellentesq<a href="#"
+                                class="link link_type_inline text text_color_red text_size_main-paragraph text_font_lato">=>
+                                more</a></p>
+                    </div>
+                </div>
+                <div class="text-wrapper">
+                    <div class="round-pannel round-pannel_size_medium round-pannel_color_red"><img
+                            src="icons/fire-extinguisher.svg" alt="Fire extinguisher" class="round-pannel__fire-extinguisher"></img></div>
+                    <article class="text-wrapper__block-wrapper">
+                        <h3
+                            class="items-pannel__header text text_style_heading text_size_main-heading text_color_dark text_font_fjalla">
+                            Vivamus vestibulum</h3>
+                        <p class="text text_style_paragraph text_size_main-paragraph text_color_grey text_font_lato">Conec nec justo eget
+                            felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean
+                            dignissim pellentesq<a href="#"
+                                class="link link_type_inline text text_color_red text_size_main-paragraph text_font_lato">=>
+                                more</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main">
+            <div class="content-block main__content-block">
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
 </html>
