@@ -1,23 +1,19 @@
 .button {
     border: none;
     background-color: #e84c3d;
-    border-radius: 20px;
+    border-radius: 18px;
     text-transform: uppercase;
+    text-align: center;
     color: white;
     font-family: 'Fjalla One', sans-serif;
     font-size: 15px;
+    letter-spacing: 0.04em;
 }
 
 .button__arrow-icon {
     width: 14px;
     height: 14px;
     margin: auto;
-}
-
-.button_style_articles {
-    padding: 8px 19px;
-    font-size: 14px;
-    font-family: 'Oswald', sans-serif;
 }
 
 .button_style_form {

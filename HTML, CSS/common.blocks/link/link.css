@@ -5,18 +5,6 @@
     font-size: inherit;
 }
 
-.link_style_carousel {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 15px;
-    letter-spacing: 0.08em;
-}
-
-.link_style_heading-navigation {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 13px;
-    color: #e7e7e7;
-}
-
 .link_type_block {
     display: block;
 }

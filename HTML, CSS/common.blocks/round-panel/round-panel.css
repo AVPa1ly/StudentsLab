@@ -1,12 +1,11 @@
 .round-panel {
-    border-radius: 50%;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 70px;
+    max-height: 70px;
     background-color: #e84c3d;
-}
-
-.round-panel_position_left {
-    float: left;
-    margin-right: 30px;
+    border-radius: 50%;
 }
 
 .round-panel_size_small {

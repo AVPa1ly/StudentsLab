@@ -7,10 +7,13 @@
     justify-content: space-between;
     padding: 80px 0;
     background-color: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
 }
 
 .items-panel__heading {
-    margin-bottom: 30px;
+    margin: 0 0 20px;
 }
 
 .items-panel__column-wrapper {
@@ -20,4 +23,8 @@
 
 .items-panel__round-panel {
     margin-right: 30px;
+}
+
+.items-panel__link {
+    margin-left: 4px;
 }

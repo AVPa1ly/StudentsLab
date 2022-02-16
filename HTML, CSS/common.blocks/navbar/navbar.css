@@ -1,21 +1,27 @@
 .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar__item {
-    float: left; /* TODO: Legacy technique? Better use flex? */
-}
-
-.navbar__item_style_block {
     display: inline-block;
     text-align: center;
     line-height: 80px;
     min-height: 80px;
     min-width: 75px;
     text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 13px;
+    color: #e7e7e7;
+    text-decoration: none;
+    letter-spacing: 0.04em;
 }
 
-.navbar__item_style_block:hover {
+.navbar__item:hover {
     background-color: #e84c3d;
 }
 
