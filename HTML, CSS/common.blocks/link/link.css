@@ -1,10 +1,20 @@
 .link {
+    font-family: 'Lato', sans-serif;
     text-decoration: none;
+    color: #e84c3d;
+    font-size: inherit;
 }
 
-.link_type_inline {
-    display: inline-block;
-    margin-left: 8px;
+.link_style_carousel {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+}
+
+.link_style_heading-navigation {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 13px;
+    color: #e7e7e7;
 }
 
 .link_type_block {

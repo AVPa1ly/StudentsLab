@@ -10,10 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="reset.css" rel="stylesheet">
     <link href="common.blocks/content-block/content-block.css" rel="stylesheet">
     <link href="common.blocks/header/header.css" rel="stylesheet">
+    <link href="common.blocks/heading/heading.css" rel="stylesheet">
+    <link href="common.blocks/paragraph/paragraph.css" rel="stylesheet">
+    <link href="common.blocks/articles/articles.css" rel="stylesheet">
     <link href="common.blocks/text/text.css" rel="stylesheet">
     <link href="common.blocks/text/text_font.css" rel="stylesheet">
     <link href="common.blocks/text/text_size.css" rel="stylesheet">
@@ -22,311 +26,277 @@
     <link href="common.blocks/link/link.css" rel="stylesheet">
     <link href="common.blocks/carousel/carousel.css" rel="stylesheet">
     <link href="common.blocks/button/button.css" rel="stylesheet">
-    <link href="common.blocks/items-pannel/items-pannel.css" rel="stylesheet">
-    <link href="common.blocks/round-pannel/round-pannel.css" rel="stylesheet">
-    <link href="common.blocks/column-wrapper/column-wrapper.css" rel="stylesheet">
+    <link href="common.blocks/items-panel/items-panel.css" rel="stylesheet">
+    <link href="common.blocks/round-panel/round-panel.css" rel="stylesheet">
     <link href="common.blocks/border-wrapper/border-wrapper.css" rel="stylesheet">
     <link href="common.blocks/heading/heading.css" rel="stylesheet">
     <link href="common.blocks/flex-container/flex-container.css" rel="stylesheet">
+    <link href="common.blocks/info-panel/info-panel.css" rel="stylesheet">
     <link href="common.blocks/main/main.css" rel="stylesheet">
     <link href="common.blocks/input/input.css" rel="stylesheet">
     <link href="common.blocks/form/form.css" rel="stylesheet">
     <link href="common.blocks/footer/footer.css" rel="stylesheet">
+    <link href="common.blocks/subscription-panel/subscription-panel.css" rel="stylesheet">
 </head>
-<!-- TODO: BEM refactoring on layout completion -->
 
 <body>
     <header class="header">
-        <div class="content-block flex-container flex-container_centered">
-            <div class="text text_font_fjalla text_style_uppercase text_size_sitename text_color_light">Site Name</div>
+        <div class="content-block header__content-block">
+            <div class="heading heading_style_sitename">Site Name</div>
             <nav>
                 <ul class="navbar">
                     <li class="navbar__item">
-                        <a href="#"
-                            class="link navbar__block text text_style_uppercase text_color_light text_font_fjalla text_size_menu">Home</a>
+                        <a href="#" class="link link_style_heading-navigation navbar__item_style_block">Home</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#"
-                            class="link navbar__block text text_style_uppercase  text_color_light text_font_fjalla text_size_menu">About</a>
+                        <a href="#" class="link link_style_heading-navigation navbar__item_style_block">About</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#"
-                            class="link navbar__block text text_style_uppercase  text_color_light text_font_fjalla text_size_menu">Services</a>
+                        <a href="#" class="link link_style_heading-navigation navbar__item_style_block">Services</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#"
-                            class="link navbar__block text text_style_uppercase  text_color_light text_font_fjalla text_size_menu">Portfolio</a>
+                        <a href="#" class="link link_style_heading-navigation navbar__item_style_block">Portfolio</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#"
-                            class="link navbar__block text text_style_uppercase  text_color_light text_font_fjalla text_size_menu">Contact</a>
+                        <a href="#" class="link link_style_heading-navigation navbar__item_style_block">Contact</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="carousel flex-container">
+        <section class="carousel">
             <div class="content-block carousel__content-block">
-                <button name="carousel-left" type="button"
-                    class="button carousel__button carousel__button-left button_color_red">
+                <button name="carousel-left" type="button" class="carousel__button carousel__button_left">
                 </button>
-                <button name="carousel-right" type="button"
-                    class="button carousel__button carousel__button-right button_color_red">
+                <button name="carousel-right" type="button" class="carousel__button carousel__button_right">
                 </button>
-                <h2
-                    class="carousel__heading carousel__heading-with-line text text_style_uppercase text_color_light text_font_fjalla text_size_carousel-heading">
+                <h2 class="heading carousel__heading heading_style_carousel">
                     Clivuam tinc</h2>
-                <h2
-                    class="carousel__heading text text_style_uppercase text_color_light text_font_fjalla text_size_carousel-heading">
+                <h2 class="heading carousel__heading heading_style_carousel">
                     Nunc dignissim risus id metus</h2>
-                <a href="http://wallpaperswide.com/"
-                    class="link text text_color_red text_font_fjalla text_size_carousel-link">http://wallpaperswide.com/</a>
+                <a href="http://wallpaperswide.com/" class="link link_style_carousel">http://wallpaperswide.com/</a>
             </div>
         </section>
-        <section class="items-pannel">
-            <!-- TODO: Refactor css values and units -->
-            <div class="content-block items-pannel__content-block flex-container flex-container_centered">
-                <div class="flex-container column-wrapper">
-                    <div
-                        class="round-pannel round-pannel_position_left round-pannel_size_medium round-pannel_color_red">
-                        <img src="icons/rocket.svg" alt="Rocket" class="round-pannel__rocket"></img>
+
+        <section class="items-panel">
+            <div class="content-block items-panel__content-block">
+                <div class="items-panel__column-wrapper">
+                    <div class="round-panel items-panel__round-panel round-panel_size_medium">
+                        <img src="icons/rocket.svg" alt="Rocket" class="round-panel__rocket"></img>
                     </div>
                     <article>
-                        <h3
-                            class="heading items-pannel__heading text text_style_uppercase text_size_main-heading text_color_dark text_font_fjalla">
+                        <h3 class="heading items-panel__heading heading_style_items-panel">
                             Aliquam tincidunt</h3>
-                        <p class="text text_style_hyphened text_size_main-paragraph text_color_grey text_font_lato">
+                        <p class="paragraph paragraph_hyphened">
                             Donec nec justo eget
                             felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
-                            pellentesq<a href="#"
-                                class="link link_type_inline text text_color_red text_size_main-paragraph text_font_lato">=>
-                                more</a></p>
+                            pellentesq
+                            <a href="#" class="link paragraph__inline-link">=> more</a>
+                        </p>
                     </article>
                 </div>
-                <div class="flex-container column-wrapper">
-                    <div
-                        class="round-pannel round-pannel_position_left round-pannel_size_medium round-pannel_color_red">
-                        <img src="icons/shield.svg" alt="Shield" class="round-pannel__shield"></img>
+                <div class="items-panel__column-wrapper">
+                    <div class="round-panel round-panel_size_medium items-panel__round-panel">
+                        <img src="icons/shield.svg" alt="Shield" class="round-panel__shield"></img>
                     </div>
                     <article>
-                        <h3
-                            class="heading items-pannel__heading text text_style_uppercase text_size_main-heading text_color_dark text_font_fjalla">
+                        <h3 class="heading items-panel__heading heading_style_items-panel">
                             Cras ornare tristiqu</h3>
-                        <p class="text text_style_hyphened text_size_main-paragraph text_color_grey text_font_lato">
+                        <p class="paragraph paragraph_hyphened">
                             Jonec nec justo eget
                             felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean
-                            dignissim pellentesq<a href="#"
-                                class="heading link link_type_inline text text_color_red text_size_main-paragraph text_font_lato">=>
-                                more</a></p>
+                            dignissim pellentesq
+                            <a href="#" class="link paragraph__inline-link">=> more</a>
+                        </p>
                     </article>
                 </div>
-                <div class="flex-container column-wrapper">
-                    <div
-                        class="round-pannel round-pannel_position_left round-pannel_size_medium round-pannel_color_red">
+                <div class="items-panel__column-wrapper">
+                    <div class="round-panel round-panel_size_medium items-panel__round-panel">
                         <img src="icons/fire-extinguisher.svg" alt="Fire extinguisher"
-                            class="round-pannel__fire-extinguisher"></img>
+                            class="round-panel__fire-extinguisher"></img>
                     </div>
                     <article>
-                        <h3
-                            class="heading items-pannel__heading text text_style_uppercase text_size_main-heading text_color_dark text_font_fjalla">
+                        <h3 class="heading items-panel__heading heading_style_items-panel">
                             Vivamus vestibulum</h3>
-                        <p class="text text_style_hyphened text_size_main-paragraph text_color_grey text_font_lato">
+                        <p class="paragraph paragraph_hyphened">
                             Conec nec justo eget
                             felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean
-                            dignissim pellentesq<a href="#"
-                                class="link link_type_inline text text_color_red text_size_main-paragraph text_font_lato">=>
-                                more</a></p>
+                            dignissim pellentesq
+                            <a href="#" class="link paragraph__inline-link">=> more</a>
+                        </p>
                     </article>
                 </div>
             </div>
         </section>
+
         <section class="main">
             <div class="content-block main__content-block">
-                <div class="flex-container main__articles">
-                    <div class="main__article-block-wrapper">
-                        <h3
-                            class="heading main__pre-section-heading main__pre-section-heading_size_smaller text text_style_uppercase text_size_main-heading text_color_dark text_font_fjalla">
+                <div class="articles">
+                    <div class="articles__text">
+                        <h3 class="heading articles__heading heading_style_main-articles">
                             Donec
                             nec justo eget felis facilisis fermentum. Aliquam porttitor
                             sit amet orci. Aenean dignissim pellentesque felis</h3>
-                        <div class="border-wrapper border-wrapper_padding_small">
-                            <h4
-                                class="main__colored-heading text text_size_main-subheading text_color_red text_font_lato">
-                                Civamus vestibulum
-                                nulla nec ante</h4>
-                        </div>
+                        <h4
+                            class="heading border-wrapper articles__colored-heading heading_style_colored border-wrapper_padding_small">
+                            Civamus vestibulum
+                            nulla nec ante</h4>
 
-                        <div class="flex-container">
-                            <article class="column-wrapper">
-                                <h5
-                                    class="main__article-heading text text_size_main-article-heading text_color_dark text_font_lato">
+                        <div class="articles-contents">
+                            <article class="articles__column-wrapper">
+                                <h5 class="heading articles__subheading heading_style_article">
                                     Sed egestas anteet </h5>
-                                <p class="text text_size_main-paragraph text_color_grey text_font_lato">Eros pede semper
+                                <p class="paragraph articles__paragraph">Eros pede semper
                                     est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing,
                                     commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor.
                                     Ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. </p>
-                                <button
-                                    class="button button_border_rounded button_color_red main__more-button text text_color_white text_font_oswald text_size_paragraph-button text_style_uppercase">More</button>
+                                <button class="button button_style_articles">More</button>
                             </article>
 
-                            <article class="column-wrapper">
-                                <h5
-                                    class="main__article-heading text text_size_main-article-heading text_color_dark text_font_lato">
+                            <article class="articles__column-wrapper">
+                                <h5 class="heading articles__subheading heading_style_article">
                                     Aenean egestas anteet </h5>
-                                <p class="text text_size_main-paragraph text_color_grey text_font_lato">Lorem pede
+                                <p class="paragraph articles__paragraph">Lorem pede
                                     semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus
                                     adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit
                                     tortor. Ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare
                                     nisl. </p>
-                                <button
-                                    class="button button_border_rounded button_color_red main__more-button text text_color_white text_font_oswald text_size_paragraph-button text_style_uppercase">More</button>
+                                <button class="button button_style_articles">More</button>
                             </article>
                         </div>
                     </div>
-                    <img class="round-pannel round-pannel_size_huge" src="static/bird.jpg" alt="Bird">
+                    <img class="round-panel round-panel_size_huge" src="static/bird.jpg" alt="Bird">
                 </div>
 
-                <div class="main__subscription-pannel flex-container">
-                    <div
-                        class="round-pannel round-pannel__men round-pannel_position_left round-pannel_size_medium round-pannel_color_black">
-                        <img src="icons/user.svg" alt="Rocket" class="round-pannel__rocket"></img>
-                    </div>
-                    <div class="main__subscription-pannel__citation-section">
-                        <h3
-                            class="heading text text_size_main-heading text_style_uppercase text_color_white text_font_fjalla">
-                            Donec nec justo eget
-                        </h3>
-                        <p
-                            class="text text_size_subscription-company text_color_white main__subscription-pannel__citation-text">
-                            <q class="text_size_subscription-paragraph"> Ede semper est, vitae luctus
-                                metus libero eu augue. Morb sipo
-                                ipiscing, commodo quis, gravida ...</q> - Kohn Doe / company name
-                        </p>
+                <div class="subscription-panel main__subscription-panel">
+                    <div class="subscription-panel__citation-wrapper">
+                        <div
+                            class="round-panel round-panel__men round-panel_position_left round-panel_size_medium round-panel_color_black">
+                            <img src="icons/user.svg" alt="Rocket" class="round-panel__rocket"></img>
+                        </div>
+                        <div>
+                            <h3 class="heading subscription-panel__heading heading_style_form">
+                                Donec nec justo eget
+                            </h3>
+                            <p class="paragraph paragraph_style_quoted">
+                                <q class="paragraph paragraph_style_quote"> Ede semper est, vitae luctus
+                                    metus libero eu augue. Morb sipo
+                                    ipiscing, commodo quis, gravida ...</q> - Kohn Doe / company name
+                            </p>
+                        </div>
                     </div>
                     <div>
-                        <h3
-                            class="heading text text_size_main-heading text_style_uppercase text_color_white text_font_fjalla">
+                        <h3 class="heading subscription-panel__heading heading_style_form">
                             Morbi vitae luctus</h3>
-                        <form class="main__subscription-pannel__form" id="subscription" action="" enctype="text/plain"
+                        <form class="subscription-panel__form" id="subscription" action="" enctype="text/plain"
                             name="subscription">
-                            <input class="input input_height_small main__subscription-pannel__input" type="email"
-                                name="mail" placeholder="eneter your email id here ..." required form="subscription">
-                            <button
-                                class="button button_border_rounded button_color_dark main__subscribe-button text text_color_white text_font_fjalla text_size_form-button text_style_uppercase"
-                                type="submit">Subscribe <img class="button__arrow" src="icons/long-arrow-right.svg"
-                                    alt="Arrow right"></button>
+                            <input class="input subscription-panel__input" type="email" name="mail"
+                                placeholder="eneter your email id here ..." required form="subscription">
+                            <button class="button button_style_form subscription-panel__button" type="submit">Subscribe
+                                <img class="button__arrow-icon" src="icons/long-arrow-right.svg" alt="Arrow right"></button>
                         </form>
                     </div>
                 </div>
 
-                <div class="flex-container flex-container_centered">
-                    <!-- Whole block-->
-                    <div class="column-wrapper">
-                        <h3
-                            class="heading main__column-heading text text_style_uppercase text_size_main-heading text_color_dark text_font_fjalla">
+                <div class="info-panel">
+                    <div class="info-panel__column-wrapper">
+                        <h3 class="heading info-panel__column-heading heading_style_column-heading">
                             Aliquam tincidunt</h3>
-                        <div class="flex-container main__column-container border-wrapper border-wrapper_padding_medium">
+                        <div class="info-panel__line-container border-wrapper border-wrapper_padding_medium">
                             <img src="static/face.jpg" alt="Women"
-                                class="round-pannel round-pannel_position_left round-pannel_size_medium"></img>
+                                class="round-panel round-panel_position_left round-panel_size_medium"></img>
                             <div>
-                                <p
-                                    class="text text_style_hyphened text_size_main-paragraph text_color_grey text_font_lato">
+                                <p class="paragraph paragraph_hyphened">
                                     Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+                                    <a href="#"
+                                        class="link info-panel__link">
+                                        more =></a>
                                 </p>
-                                <a href="#"
-                                    class="link link_type_block text text_color_red text_size_main-paragraph text_font_lato">
-                                    more =></a>
                             </div>
                         </div>
-                        <div class="flex-container main__column-container border-wrapper border-wrapper_padding_medium">
+                        <div class="info-panel__line-container border-wrapper border-wrapper_padding_medium">
                             <img src="static/cage.jpg" alt="Cage"
-                                class="round-pannel round-pannel_position_left round-pannel_size_medium"></img>
+                                class="round-panel round-panel_position_left round-panel_size_medium"></img>
                             <div>
-                                <p
-                                    class="text text_style_hyphened text_size_main-paragraph text_color_grey text_font_lato">
+                                <p class="paragraph paragraph_hyphened">
                                     Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+                                    <a href="#"
+                                        class="link info-panel__link">
+                                        more =></a>
                                 </p>
-                                <a href="#"
-                                    class="link link_type_block text text_color_red text_size_main-paragraph text_font_lato">
-                                    more =></a>
                             </div>
                         </div>
-                        <div class="flex-container main__column-container border-wrapper border-wrapper_padding_medium">
+                        <div class="info-panel__line-container border-wrapper border-wrapper_padding_medium">
                             <img src="static/bird_small.jpg" alt="Bird"
-                                class="round-pannel round-pannel_position_left round-pannel_size_medium"></img>
+                                class="round-panel round-panel_position_left round-panel_size_medium"></img>
                             <div>
-                                <p
-                                    class="text text_style_hyphened text_size_main-paragraph text_color_grey text_font_lato">
+                                <p class="paragraph paragraph_hyphened">
                                     Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+                                    <a href="#"
+                                        class="link info-panel__link">
+                                        more =></a>
                                 </p>
-                                <a href="#"
-                                    class="link link_type_block text text_color_red text_size_main-paragraph text_font_lato">
-                                    more =></a>
                             </div>
                         </div>
                     </div>
-                    <!-- TODO: Continue with this shred -->
-                    <div class="column-wrapper">
-                        <!-- Single column-->
-                        <h3
-                            class="heading main__column-heading text text_style_uppercase text_size_main-heading text_color_dark text_font_fjalla">
+
+                    <div class="info-panel__column-wrapper">
+                        <h3 class="heading info-panel__column-heading heading_style_column-heading">
                             Nunc dignissim risu</h3>
-                        <form class="form" id="register" action="" enctype="text/plain" name="register">
-                            <p
-                                class="text main__form-pannel__heading text_size_main-paragraph text_color_grey text_font_lato">
+                        <form class="paragraph form__paragraph form" id="register" action="" enctype="text/plain" name="register">
+                            
                                 Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus liber
-                            </p>
-                            <input class="input input_height_small main__form-pannel__input" type="text" name="name"
+                            
+                            <input class="input form__input" type="text" name="name"
                                 placeholder="name ..." required form="register">
-                            <input class="input input_height_small main__form-pannel__input" type="email" name="mail"
+                            <input class="input form__input" type="email" name="mail"
                                 placeholder="email ..." required form="register">
                             <textarea
-                                class="main__ff input input_height_medium input_non-resizable input_border-radius_small main__form-pannel__input"
+                                class="input form__input input_style_textarea"
                                 name="query" placeholder="your query ..." required form="register"></textarea>
                             <button
-                                class="button button_border_rounded button_color_red main__send-button text text_color_white text_font_fjalla text_size_form-button text_style_uppercase"
-                                type="submit">Send <img class="button__arrow main__form-pannel__button-arrow"
+                                class="button form__button"
+                                type="submit">Send <img class="button__arrow-icon form__button-arrow"
                                     src="icons/long-arrow-right.svg" alt="Arrow right"></button>
                         </form>
                     </div>
 
-                    <div class="column-wrapper">
-                        <h3
-                            class="heading main__column-heading text text_style_uppercase text_size_main-heading text_color_dark text_font_fjalla">
+                    <div class="info-panel__column-wrapper">
+                        <h3 class="heading info-panel__column-heading heading_style_column-heading">
                             Aliquam tincidunt</h3>
-                        <div class="main__info-box main__column-container border-wrapper border-wrapper_padding_medium">
-                            <img src="icons/home.svg" alt="Home" class="main__info-icon"></img>
+                        <div class="info-panel__line-container border-wrapper border-wrapper_padding_medium">
+                            <img src="icons/home.svg" alt="Home" class="info-panel__icon"></img>
                             <div>
                                 <h4
-                                    class="main__colored-heading main__info-box__heading text text_size_main-subheading text_color_red text_font_lato">
+                                    class="heading_style_info info-panel__heading">
                                     Address</h4>
                                 <address
-                                    class="text text_style_hyphened text_size_main-paragraph text_color_grey text_font_lato">
+                                    class="paragraph">
                                     some block, steet number, city name,<br>country
                                 </address>
                             </div>
                         </div>
-                        <div class="main__info-box main__column-container border-wrapper border-wrapper_padding_medium">
-                            <img src="icons/phone-square.svg" alt="Phone" class="main__info-icon"></img>
+                        <div class="info-panel__line-container border-wrapper border-wrapper_padding_medium">
+                            <img src="icons/phone-square.svg" alt="Phone" class="info-panel__icon"></img>
                             <div>
                                 <h4
-                                    class="main__colored-heading main__info-box__heading text text_size_main-subheading text_color_red text_font_lato">
+                                    class="heading_style_info info-panel__heading">
                                     Phone</h4>
                                 <address
-                                    class="text text_style_hyphened text_size_main-paragraph text_color_grey text_font_lato">
+                                    class="paragraph">
                                     (000) 777 777 7777<br>(000) 888 888 8888
                                 </address>
                             </div>
                         </div>
-                        <div class="main__info-box main__column-container border-wrapper border-wrapper_padding_medium">
-                            <img src="icons/envelope.svg" alt="Home" class="main__info-icon"></img>
+                        <div class="info-panel__line-container border-wrapper border-wrapper_padding_medium">
+                            <img src="icons/envelope.svg" alt="Home" class="info-panel__icon"></img>
                             <div>
                                 <h4
-                                    class="main__colored-heading main__info-box__heading text text_size_main-subheading text_color_red text_font_lato">
+                                    class="heading_style_info info-panel__heading">
                                     Email us</h4>
                                 <address
-                                    class="text text_style_hyphened text_size_main-paragraph text_color_grey text_font_lato">
+                                    class="paragraph">
                                     info@sitename.com<br>sales@sitename.com<br>company@sitename.com
                                 </address>
                             </div>
@@ -366,7 +336,7 @@
                     Designed by: <a class="link" href="#">www.alltemplateneeds.com</a>
                 </address>
                 <address class="footer__credits text  text_color_grey text_font_lato text_size_footer-nav">
-                    Images from: <a class="link" href="#">http://wallpaperswide.com/</a>
+                    Images from: <a class="link" href="http://wallpaperswide.com/">http://wallpaperswide.com/</a>
                 </address>
                 <address class="footer__credits text  text_color_grey text_font_lato text_size_footer-nav ">
                     Copyright(c) website name.
@@ -374,20 +344,17 @@
             </div>
 
             <div>
-                <a href="#"
-                        class=" footer__round-pannel round-pannel round-pannel_position_left round-pannel_size_small round-pannel_color_red">
-                        <img src="icons/facebook.svg" alt="Facebook"
-                            class="round-pannel__facebook"></img>
+                <a href="http://facebook.com"
+                    class=" footer__round-panel round-panel round-panel_position_left round-panel_size_small round-panel_color_red">
+                    <img src="icons/facebook.svg" alt="Facebook" class="round-panel__facebook"></img>
                 </a>
-                <a href="#"
-                        class=" footer__round-pannel round-pannel round-pannel_position_left round-pannel_size_small round-pannel_color_red">
-                        <img src="icons/twitter.svg" alt="Twitter"
-                            class="round-pannel__twitter"></img>
+                <a href="http://twitter.com"
+                    class=" footer__round-panel round-panel round-panel_position_left round-panel_size_small round-panel_color_red">
+                    <img src="icons/twitter.svg" alt="Twitter" class="round-panel__twitter"></img>
                 </a>
-                <a href="#"
-                        class=" footer__round-pannel round-pannel round-pannel_position_left round-pannel_size_small round-pannel_color_red">
-                        <img src="icons/linkedin.svg" alt="LinkedIn"
-                            class="round-pannel__linkedin"></img>
+                <a href="http://linkedin.com"
+                    class=" footer__round-panel round-panel round-panel_position_left round-panel_size_small round-panel_color_red">
+                    <img src="icons/linkedin.svg" alt="LinkedIn" class="round-panel__linkedin"></img>
                 </a>
             </div>
         </div>

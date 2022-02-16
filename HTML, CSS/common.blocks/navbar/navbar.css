@@ -1,22 +1,21 @@
 .navbar {
     list-style-type: none;
-    overflow: hidden; /* Establishig BFC */
 }
 
 .navbar__item {
     float: left; /* TODO: Legacy technique? Better use flex? */
 }
 
-.navbar__block {
+.navbar__item_style_block {
     display: inline-block;
-    box-sizing: border-box;
     text-align: center;
     line-height: 80px;
     min-height: 80px;
     min-width: 75px;
+    text-transform: uppercase;
 }
 
-.navbar__block:hover {
+.navbar__item_style_block:hover {
     background-color: #e84c3d;
 }
 

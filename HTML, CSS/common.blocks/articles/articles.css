@@ -1,0 +1,35 @@
+.articles {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.articles-contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.articles__text {
+    width: 770px; /* TODO: value = items-panel__column-wrapper * 2 */
+}
+
+.articles__heading {
+    margin-bottom: 30px;
+    width: 600px;
+}
+
+.articles__colored-heading {
+    margin-bottom: 29px;
+}
+
+.articles__column-wrapper {
+    width: 370px;
+}
+
+.articles__subheading {
+    margin-bottom: 14px;
+}
+
+.articles__paragraph {
+    margin-bottom: 38px;
+}

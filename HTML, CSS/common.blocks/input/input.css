@@ -7,21 +7,12 @@
     font-style: italic;
     font-size: 14px;
     border: none;
+    height: 41px;
     padding: 17px 19px;
 }
 
-.input_height_small {
-    height: 41px;
-}
-
-.input_height_medium {
-    height: 82px;
-}
-
-.input_non-resizable {
-    resize: none;
-}
-
-.input_border-radius_small {
+.input_style_textarea {
     border-radius: 10px;
+    resize: none;
+    height: 82px;
 }

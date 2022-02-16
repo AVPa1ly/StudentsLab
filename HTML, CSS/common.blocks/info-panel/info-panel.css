@@ -1,0 +1,31 @@
+.info-panel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-panel__column-wrapper {
+    width: 370px;
+}
+
+.info-panel__column-heading {
+    margin-bottom: 29px;
+}
+
+.info-panel__line-container {
+    display: flex;
+    align-items: center;
+}
+
+.info-panel__link {
+    display: block;
+    margin-top: 2px; /* TODO: Cruel solution for alligning in line with adjacent form */
+}
+
+.info-panel__icon {
+    margin-right: 22px;
+    align-self: flex-start;
+}
+
+.info-panel__heading {
+    margin-bottom: 3px; /* TODO: Huge question on this infobox. What's so wrong about it? */
+}

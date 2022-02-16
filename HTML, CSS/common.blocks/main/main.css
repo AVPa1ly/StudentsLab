@@ -4,78 +4,16 @@
 
 .main__content-block {
     padding: 80px 0 60px 0;
-}
-
-.main__article-block-wrapper {
-    width: 770px; /* = column-wrapper * 2 */
-}
-
-.main__articles {
-    align-items: flex-end;
-}
-
-.main__pre-section-heading {
-    margin-bottom: 30px;
-}
-
-.main__pre-section-heading_size_smaller {
-    width: 600px;
+    background-color: inherit;
 }
 
 .main__column-heading {
     margin-bottom: 29px;
 }
 
-.main__article-heading {
-    margin: 29px 0 17px 0;
-}
-
-.main__subscription-pannel {
-    background-color: #e84c3d;
-    border-radius: 11px;
+.main__subscription-panel {
     padding: 50px 30px;
     margin: 80px 0;
-    display: flex;
-    justify-content: center;
-}
-
-.main__subscription-pannel__citation-section {
-    width: 435px;
-}
-
-.main__subscription-pannel__input { /* fix bem */
-    display: inline-block;
-    width: 380px;
-}
-
-.main__subscription-pannel__form { /* fix bem */
-    margin-top: 30px;
-}
-
-.main__subscription-pannel__citation-text { /* fix bem */
-    margin-top: 25px;
-    margin-bottom: 0;
-}
-
-.main__column-container {
-    align-items: center;
-}
-
-.main__form-pannel__input {
-    width: 310px;
-    margin: 10px 0; /* TODO: No margin collapsing for some reason, needs to be 20px margin between each input */
-}
-
-.main__form-pannel__paragraph {
-    margin-bottom: 29px;
-}
-
-.main__form-pannel__button-arrow {
-    margin-left: 10px; /* TODO: Counted 15px margin-left in PS, actually fits 10px for some (probably, measurement) reason */
-}
-
-.main__form-pannel__heading {
-    margin-bottom: 19px;
 }
 
 .main__info-icon {
@@ -83,25 +21,6 @@
     align-self: flex-start;
 }
 
-.main__info-box {
-    display: flex;
-}
-
 .main__info-box__heading {
     margin-bottom: -1px; /* TODO: Huge question on this infobox. What's so wrong about it? */
-}
-
-.main__more-button {
-    padding: 8px 19px; /* TODO: padding top and bottom values do not match PS calculations */
-    margin-top: 38px;
-}
-
-.main__subscribe-button {
-    padding: 10px 20px 11px 22px; /* TODO: padding top and bottom values do not match PS calculations */
-    margin-left: 9px;
-}
-
-.main__send-button {
-    padding: 11px 20px 11px;
-    margin-top: 10px;
 }

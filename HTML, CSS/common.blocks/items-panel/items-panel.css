@@ -1,0 +1,23 @@
+.items-panel {
+    background-color: #e7e7e7;
+}
+
+.items-panel__content-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+    background-color: inherit;
+}
+
+.items-panel__heading {
+    margin-bottom: 30px;
+}
+
+.items-panel__column-wrapper {
+    display: flex;
+    width: 370px;
+}
+
+.items-panel__round-panel {
+    margin-right: 30px;
+}

@@ -1,0 +1,29 @@
+.paragraph {
+    font-family: 'Lato', sans-serif;
+    color: #767c7e;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.paragraph_hyphened {
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+.paragraph__inline-link {
+    margin-left: 8px;
+}
+
+.paragraph_style_quoted {
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.paragraph_style_quote {
+    color: inherit;
+    font-size: 16px;
+    font-style: normal;
+}

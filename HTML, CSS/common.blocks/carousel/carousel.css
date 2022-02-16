@@ -3,6 +3,7 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 560px;
+    display: flex;
     align-items: flex-end;
 }
 
@@ -10,34 +11,38 @@
     margin-bottom: 61px;
 }
 
+.carousel__button_left {
+    margin-right:-3px; /*TODO: Default gap between adjacent left and right carousel buttons is too huge for some reason*/
+    border-bottom-left-radius: 70px;
+    border-top-left-radius: 70px;
+    background-image: url("../../icons/angle-left.svg")
+}
+
+.carousel__button_right {
+    border-bottom-right-radius: 70px;
+    border-top-right-radius: 70px;
+    background-image: url("../../icons/angle-right.svg")
+}
+
 .carousel__button {
+    border: none;
+    background-color: #e84c3d;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 24px 8px 24px 16px;
     height: 70px;
     width: 34px;
-}
-
-.carousel__button-left {
-    margin-right:-3px; /*TODO*/
-    border-bottom-left-radius: 70px;
-    border-top-left-radius: 70px;
-    background: url("../../icons/angle-left.svg") center no-repeat
-}
-
-.carousel__button-right {
-    border-bottom-right-radius: 70px;
-    border-top-right-radius: 70px;
-    background: url("../../icons/angle-right.svg") center no-repeat
 }
 
 .carousel__heading {
     margin-bottom: 20px;
 }
 
-.carousel__heading-with-line {
+.carousel__heading:first-of-type {
     margin-top: 30px;
 }
 
-.carousel__heading-with-line::after {
+.carousel__heading:first-of-type:after {
     content: "";
     background-color: #e7e7e7;
     display: inline-block;

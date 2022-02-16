@@ -1,21 +1,25 @@
 .button {
     border: none;
-}
-
-.button_border_rounded {
-    border-radius: 20px;
-}
-
-.button_color_red {
     background-color: #e84c3d;
+    border-radius: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 15px;
 }
 
-.button_color_dark {
-    background-color: #202628;
-}
-
-.button__arrow {
+.button__arrow-icon {
     width: 14px;
     height: 14px;
     margin: auto;
+}
+
+.button_style_articles {
+    padding: 8px 19px;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.button_style_form {
+    background-color: #202628;
 }

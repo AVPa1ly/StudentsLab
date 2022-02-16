@@ -1,0 +1,57 @@
+.round-panel {
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: #e84c3d;
+}
+
+.round-panel_position_left {
+    float: left;
+    margin-right: 30px;
+}
+
+.round-panel_size_small {
+    width: 43px;
+    height: 43px;
+}
+
+.round-panel_size_medium {
+    width: 70px;
+    height: 70px;
+}
+
+.round-panel_size_huge {
+    width: 355px;
+    height: 355px;
+}
+
+.round-panel_color_black {
+    background-color: #202628;
+}
+
+.round-panel__rocket { /* TODO: As for me, this is the stupidest way of centering icon inside a rounded panel. But I couldn't think of a better one */
+    padding: 21px 22px;
+}
+
+.round-panel__shield {
+    padding: 21px 25px;
+}
+
+.round-panel__fire-extinguisher {
+    padding: 21px 24px;
+}
+
+.round-panel__men {
+    padding: 0 4px;
+}
+
+.round-panel__facebook {
+    padding: 8px 14px;
+}
+
+.round-panel__linkedin {
+    padding: 8px 10px;
+}
+
+.round-panel__twitter {
+    padding: 8px 9px;
+}

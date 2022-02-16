@@ -1,0 +1,58 @@
+.heading {
+    font-family: 'Fjalla One', sans-serif;
+    color: #e7e7e7;
+    text-transform: uppercase;
+}
+
+.heading_style_sitename {
+    font-size: 25px;
+}
+
+.heading_style_carousel {
+    font-size: 31px;
+    letter-spacing: 0.08em;
+}
+
+.heading_style_items-panel {
+    font-size: 21px;
+    color: #202628;
+}
+
+.heading_style_main-articles { /* TODO: Repeating values */
+    font-size: 21px;
+    color: #202628;
+    line-height: initial;
+}
+
+.heading_style_colored {
+    font-family: 'Lato', sans-serif;
+    color: #e84c3d;
+    font-size: 20px;
+    text-transform: unset;
+}
+
+.heading_style_article {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #202628;
+    text-transform: unset;
+    font-weight: bold;
+}
+
+.heading_style_form {
+    font-size: 21px;
+    color: white
+}
+
+.heading_style_column-heading {
+    font-size: 21px;
+    color: #202628;
+}
+
+.heading_style_info {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px; /* TODO: Size unknown */
+    color: #e84c3d;
+    font-weight: bold;
+}

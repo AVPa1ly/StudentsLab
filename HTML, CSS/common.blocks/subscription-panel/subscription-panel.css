@@ -1,0 +1,29 @@
+.subscription-panel {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e84c3d;
+    border-radius: 11px;
+}
+
+.subscription-panel__citation-wrapper {
+    display: flex;
+    width: 536px;
+}
+
+.subscription-panel__input {
+    display: inline-block;
+    width: 380px;
+    margin-right: 9px;
+}
+
+.subscription-panel__form {
+    margin-top: 30px;
+}
+
+.subscription-panel__heading {
+    margin-bottom: 25px;
+}
+
+.subscription-panel__button {
+    padding: 10px 20px 11px 22px; /* TODO: padding top and bottom values do not match PS calculations */
+}
