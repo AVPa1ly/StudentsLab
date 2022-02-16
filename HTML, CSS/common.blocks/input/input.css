@@ -1,0 +1,27 @@
+.input {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 20px;
+    font-family: 'Lato', sans-serif;
+    color: #767c7e;
+    font-style: italic;
+    font-size: 14px;
+    border: none;
+    padding: 17px 19px;
+}
+
+.input_height_small {
+    height: 41px;
+}
+
+.input_height_medium {
+    height: 82px;
+}
+
+.input_non-resizable {
+    resize: none;
+}
+
+.input_border-radius_small {
+    border-radius: 10px;
+}

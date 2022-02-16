@@ -1,20 +1,17 @@
 .carousel {
     background-image: url("../../static/women.jpg");
     background-repeat: no-repeat;
+    background-position: center;
     height: 560px;
-    display: flex;
     align-items: flex-end;
 }
 
 .carousel__content-block {
-    display: block;
     margin-bottom: 61px;
 }
 
 .carousel__button {
-    box-sizing: border-box;
     padding: 24px 8px 24px 16px;
-    font-size: 18px;
     height: 70px;
     width: 34px;
 }
@@ -32,19 +29,15 @@
     background: url("../../icons/angle-right.svg") center no-repeat
 }
 
-.carousel__text {
-    margin-bottom: 0.5em;
+.carousel__heading {
+    margin-bottom: 20px;
 }
 
-.carousel__text:not(:first-of-type) {
-    margin-top: 0;
+.carousel__heading-with-line {
+    margin-top: 30px;
 }
 
-.carousel__text-with-line {
-    overflow: hidden;
-}
-
-.carousel__text-with-line::after {
+.carousel__heading-with-line::after {
     content: "";
     background-color: #e7e7e7;
     display: inline-block;

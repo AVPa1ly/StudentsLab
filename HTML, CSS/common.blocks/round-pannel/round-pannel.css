@@ -1,8 +1,10 @@
 .round-pannel {
-    float: left;
     border-radius: 50%;
     box-sizing: border-box;
-    text-align: center;
+}
+
+.round-pannel_position_left {
+    float: left;
     margin-right: 30px;
 }
 
@@ -39,4 +41,20 @@
 
 .round-pannel__fire-extinguisher {
     padding: 21px 24px;
+}
+
+.round-pannel__men {
+    padding: 0 4px;
+}
+
+.round-pannel__facebook {
+    padding: 8px 14px;
+}
+
+.round-pannel__linkedin {
+    padding: 8px 10px;
+}
+
+.round-pannel__twitter {
+    padding: 8px 9px;
 }

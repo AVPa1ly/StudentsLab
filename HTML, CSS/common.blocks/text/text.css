@@ -2,13 +2,17 @@
     font-weight: normal;
 }
 
-.text_style_heading {
+.text_style_uppercase {
     text-transform: uppercase;
 }
 
-.text_style_paragraph {
+.text_style_hyphened {
     -ms-hyphens: auto;
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+}
+
+.text_style_italic {
+    font-style: italic;
 }

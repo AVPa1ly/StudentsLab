@@ -1,0 +1,29 @@
+.footer {
+    background-color: #202628;
+    padding-top: 80px;
+    padding-bottom: 82px;
+}
+
+.footer__credits {
+    display: inline-block;
+}
+
+.footer__credits::after {
+    content: '/';
+}
+
+.footer__credits:last-of-type::after {
+    content: '';
+}
+
+.footer__navigation {
+    margin-bottom: 20px;
+}
+
+.footer__round-pannel {
+    margin-right: 20px;
+}
+
+.footer__round-pannel:last-of-type {
+    margin-right: 0;
+}

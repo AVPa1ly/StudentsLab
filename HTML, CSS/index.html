@@ -2,15 +2,16 @@
 <html lang="en-US">
 
 <head>
+    <title>Sample page</title>
     <meta charset="utf-8">
     <meta name="author" content="AVPa1ly">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="reset.css" rel="stylesheet">
     <link href="common.blocks/content-block/content-block.css" rel="stylesheet">
     <link href="common.blocks/header/header.css" rel="stylesheet">
     <link href="common.blocks/text/text.css" rel="stylesheet">
@@ -23,43 +24,49 @@
     <link href="common.blocks/button/button.css" rel="stylesheet">
     <link href="common.blocks/items-pannel/items-pannel.css" rel="stylesheet">
     <link href="common.blocks/round-pannel/round-pannel.css" rel="stylesheet">
-    <link href="common.blocks/text-wrapper/text-wrapper.css" rel="stylesheet">
-    <link href="common.blocks/text-wrapper/text-wrapper.css" rel="stylesheet">
+    <link href="common.blocks/column-wrapper/column-wrapper.css" rel="stylesheet">
+    <link href="common.blocks/border-wrapper/border-wrapper.css" rel="stylesheet">
+    <link href="common.blocks/heading/heading.css" rel="stylesheet">
+    <link href="common.blocks/flex-container/flex-container.css" rel="stylesheet">
+    <link href="common.blocks/main/main.css" rel="stylesheet">
+    <link href="common.blocks/input/input.css" rel="stylesheet">
+    <link href="common.blocks/form/form.css" rel="stylesheet">
+    <link href="common.blocks/footer/footer.css" rel="stylesheet">
 </head>
-</head>
+<!-- TODO: BEM refactoring on layout completion -->
 
 <body>
     <header class="header">
-        <div class="content-block header__content-block">
-            <p class="text text_style_heading text_font_fjalla text_size_sitename text_color_light">Site Name</p>
+        <div class="content-block flex-container flex-container_centered">
+            <div class="text text_font_fjalla text_style_uppercase text_size_sitename text_color_light">Site Name</div>
             <nav>
                 <ul class="navbar">
                     <li class="navbar__item">
                         <a href="#"
-                            class="link navbar__link text text_style_heading text_color_light text_font_fjalla text_size_menu">Home</a>
+                            class="link navbar__block text text_style_uppercase text_color_light text_font_fjalla text_size_menu">Home</a>
                     </li>
                     <li class="navbar__item">
                         <a href="#"
-                            class="link navbar__link text text_style_heading  text_color_light text_font_fjalla text_size_menu">About</a>
+                            class="link navbar__block text text_style_uppercase  text_color_light text_font_fjalla text_size_menu">About</a>
                     </li>
                     <li class="navbar__item">
                         <a href="#"
-                            class="link navbar__link text text_style_heading  text_color_light text_font_fjalla text_size_menu">Services</a>
+                            class="link navbar__block text text_style_uppercase  text_color_light text_font_fjalla text_size_menu">Services</a>
                     </li>
                     <li class="navbar__item">
                         <a href="#"
-                            class="link navbar__link text text_style_heading  text_color_light text_font_fjalla text_size_menu">Portfolio</a>
+                            class="link navbar__block text text_style_uppercase  text_color_light text_font_fjalla text_size_menu">Portfolio</a>
                     </li>
                     <li class="navbar__item">
                         <a href="#"
-                            class="link navbar__link text text_style_heading  text_color_light text_font_fjalla text_size_menu">Contact</a>
+                            class="link navbar__block text text_style_uppercase  text_color_light text_font_fjalla text_size_menu">Contact</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="carousel">
+        <section class="carousel flex-container">
             <div class="content-block carousel__content-block">
                 <button name="carousel-left" type="button"
                     class="button carousel__button carousel__button-left button_color_red">
@@ -68,69 +75,322 @@
                     class="button carousel__button carousel__button-right button_color_red">
                 </button>
                 <h2
-                    class="carousel__text carousel__text-with-line text text_style_heading text_color_light text_font_fjalla text_size_carousel-heading">
+                    class="carousel__heading carousel__heading-with-line text text_style_uppercase text_color_light text_font_fjalla text_size_carousel-heading">
                     Clivuam tinc</h2>
                 <h2
-                    class="carousel__text text text_style_heading text_color_light text_font_fjalla text_size_carousel-heading">
+                    class="carousel__heading text text_style_uppercase text_color_light text_font_fjalla text_size_carousel-heading">
                     Nunc dignissim risus id metus</h2>
-                <a href="#"
+                <a href="http://wallpaperswide.com/"
                     class="link text text_color_red text_font_fjalla text_size_carousel-link">http://wallpaperswide.com/</a>
             </div>
         </section>
         <section class="items-pannel">
-            <div class="content-block items-pannel__content-block">
-                <div class="text-wrapper">
-                    <article class="round-pannel round-pannel_size_medium round-pannel_color_red"><img
-                            src="icons/rocket.svg" alt="Rocket" class="round-pannel__rocket"></img></div>
-                    <div class="text-wrapper__block-wrapper">
+            <!-- TODO: Refactor css values and units -->
+            <div class="content-block items-pannel__content-block flex-container flex-container_centered">
+                <div class="flex-container column-wrapper">
+                    <div
+                        class="round-pannel round-pannel_position_left round-pannel_size_medium round-pannel_color_red">
+                        <img src="icons/rocket.svg" alt="Rocket" class="round-pannel__rocket"></img>
+                    </div>
+                    <article>
                         <h3
-                            class="items-pannel__header text text_style_heading text_size_main-heading text_color_dark text_font_fjalla">
+                            class="heading items-pannel__heading text text_style_uppercase text_size_main-heading text_color_dark text_font_fjalla">
                             Aliquam tincidunt</h3>
-                        <p class="text text_style_paragraph text_size_main-paragraph text_color_grey text_font_lato">Donec nec justo eget
+                        <p class="text text_style_hyphened text_size_main-paragraph text_color_grey text_font_lato">
+                            Donec nec justo eget
                             felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
                             pellentesq<a href="#"
                                 class="link link_type_inline text text_color_red text_size_main-paragraph text_font_lato">=>
                                 more</a></p>
-                    </div>
+                    </article>
                 </div>
-                <div class="text-wrapper">
-                    <div class="round-pannel round-pannel_size_medium round-pannel_color_red"><img
-                            src="icons/shield.svg" alt="Shield" class="round-pannel__shield"></img></div>
-                    <article class="text-wrapper__block-wrapper">
+                <div class="flex-container column-wrapper">
+                    <div
+                        class="round-pannel round-pannel_position_left round-pannel_size_medium round-pannel_color_red">
+                        <img src="icons/shield.svg" alt="Shield" class="round-pannel__shield"></img>
+                    </div>
+                    <article>
                         <h3
-                            class="items-pannel__header text text_style_heading text_size_main-heading text_color_dark text_font_fjalla">
+                            class="heading items-pannel__heading text text_style_uppercase text_size_main-heading text_color_dark text_font_fjalla">
                             Cras ornare tristiqu</h3>
-                        <p class="text text_style_paragraph text_size_main-paragraph text_color_grey text_font_lato">Jonec nec justo eget
+                        <p class="text text_style_hyphened text_size_main-paragraph text_color_grey text_font_lato">
+                            Jonec nec justo eget
                             felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean
                             dignissim pellentesq<a href="#"
-                                class="link link_type_inline text text_color_red text_size_main-paragraph text_font_lato">=>
+                                class="heading link link_type_inline text text_color_red text_size_main-paragraph text_font_lato">=>
                                 more</a></p>
-                    </div>
+                    </article>
                 </div>
-                <div class="text-wrapper">
-                    <div class="round-pannel round-pannel_size_medium round-pannel_color_red"><img
-                            src="icons/fire-extinguisher.svg" alt="Fire extinguisher" class="round-pannel__fire-extinguisher"></img></div>
-                    <article class="text-wrapper__block-wrapper">
+                <div class="flex-container column-wrapper">
+                    <div
+                        class="round-pannel round-pannel_position_left round-pannel_size_medium round-pannel_color_red">
+                        <img src="icons/fire-extinguisher.svg" alt="Fire extinguisher"
+                            class="round-pannel__fire-extinguisher"></img>
+                    </div>
+                    <article>
                         <h3
-                            class="items-pannel__header text text_style_heading text_size_main-heading text_color_dark text_font_fjalla">
+                            class="heading items-pannel__heading text text_style_uppercase text_size_main-heading text_color_dark text_font_fjalla">
                             Vivamus vestibulum</h3>
-                        <p class="text text_style_paragraph text_size_main-paragraph text_color_grey text_font_lato">Conec nec justo eget
+                        <p class="text text_style_hyphened text_size_main-paragraph text_color_grey text_font_lato">
+                            Conec nec justo eget
                             felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean
                             dignissim pellentesq<a href="#"
                                 class="link link_type_inline text text_color_red text_size_main-paragraph text_font_lato">=>
                                 more</a></p>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
         <section class="main">
             <div class="content-block main__content-block">
-                
+                <div class="flex-container main__articles">
+                    <div class="main__article-block-wrapper">
+                        <h3
+                            class="heading main__pre-section-heading main__pre-section-heading_size_smaller text text_style_uppercase text_size_main-heading text_color_dark text_font_fjalla">
+                            Donec
+                            nec justo eget felis facilisis fermentum. Aliquam porttitor
+                            sit amet orci. Aenean dignissim pellentesque felis</h3>
+                        <div class="border-wrapper border-wrapper_padding_small">
+                            <h4
+                                class="main__colored-heading text text_size_main-subheading text_color_red text_font_lato">
+                                Civamus vestibulum
+                                nulla nec ante</h4>
+                        </div>
+
+                        <div class="flex-container">
+                            <article class="column-wrapper">
+                                <h5
+                                    class="main__article-heading text text_size_main-article-heading text_color_dark text_font_lato">
+                                    Sed egestas anteet </h5>
+                                <p class="text text_size_main-paragraph text_color_grey text_font_lato">Eros pede semper
+                                    est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing,
+                                    commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor.
+                                    Ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. </p>
+                                <button
+                                    class="button button_border_rounded button_color_red main__more-button text text_color_white text_font_oswald text_size_paragraph-button text_style_uppercase">More</button>
+                            </article>
+
+                            <article class="column-wrapper">
+                                <h5
+                                    class="main__article-heading text text_size_main-article-heading text_color_dark text_font_lato">
+                                    Aenean egestas anteet </h5>
+                                <p class="text text_size_main-paragraph text_color_grey text_font_lato">Lorem pede
+                                    semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus
+                                    adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit
+                                    tortor. Ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare
+                                    nisl. </p>
+                                <button
+                                    class="button button_border_rounded button_color_red main__more-button text text_color_white text_font_oswald text_size_paragraph-button text_style_uppercase">More</button>
+                            </article>
+                        </div>
+                    </div>
+                    <img class="round-pannel round-pannel_size_huge" src="static/bird.jpg" alt="Bird">
+                </div>
+
+                <div class="main__subscription-pannel flex-container">
+                    <div
+                        class="round-pannel round-pannel__men round-pannel_position_left round-pannel_size_medium round-pannel_color_black">
+                        <img src="icons/user.svg" alt="Rocket" class="round-pannel__rocket"></img>
+                    </div>
+                    <div class="main__subscription-pannel__citation-section">
+                        <h3
+                            class="heading text text_size_main-heading text_style_uppercase text_color_white text_font_fjalla">
+                            Donec nec justo eget
+                        </h3>
+                        <p
+                            class="text text_size_subscription-company text_color_white main__subscription-pannel__citation-text">
+                            <q class="text_size_subscription-paragraph"> Ede semper est, vitae luctus
+                                metus libero eu augue. Morb sipo
+                                ipiscing, commodo quis, gravida ...</q> - Kohn Doe / company name
+                        </p>
+                    </div>
+                    <div>
+                        <h3
+                            class="heading text text_size_main-heading text_style_uppercase text_color_white text_font_fjalla">
+                            Morbi vitae luctus</h3>
+                        <form class="main__subscription-pannel__form" id="subscription" action="" enctype="text/plain"
+                            name="subscription">
+                            <input class="input input_height_small main__subscription-pannel__input" type="email"
+                                name="mail" placeholder="eneter your email id here ..." required form="subscription">
+                            <button
+                                class="button button_border_rounded button_color_dark main__subscribe-button text text_color_white text_font_fjalla text_size_form-button text_style_uppercase"
+                                type="submit">Subscribe <img class="button__arrow" src="icons/long-arrow-right.svg"
+                                    alt="Arrow right"></button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="flex-container flex-container_centered">
+                    <!-- Whole block-->
+                    <div class="column-wrapper">
+                        <h3
+                            class="heading main__column-heading text text_style_uppercase text_size_main-heading text_color_dark text_font_fjalla">
+                            Aliquam tincidunt</h3>
+                        <div class="flex-container main__column-container border-wrapper border-wrapper_padding_medium">
+                            <img src="static/face.jpg" alt="Women"
+                                class="round-pannel round-pannel_position_left round-pannel_size_medium"></img>
+                            <div>
+                                <p
+                                    class="text text_style_hyphened text_size_main-paragraph text_color_grey text_font_lato">
+                                    Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+                                </p>
+                                <a href="#"
+                                    class="link link_type_block text text_color_red text_size_main-paragraph text_font_lato">
+                                    more =></a>
+                            </div>
+                        </div>
+                        <div class="flex-container main__column-container border-wrapper border-wrapper_padding_medium">
+                            <img src="static/cage.jpg" alt="Cage"
+                                class="round-pannel round-pannel_position_left round-pannel_size_medium"></img>
+                            <div>
+                                <p
+                                    class="text text_style_hyphened text_size_main-paragraph text_color_grey text_font_lato">
+                                    Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+                                </p>
+                                <a href="#"
+                                    class="link link_type_block text text_color_red text_size_main-paragraph text_font_lato">
+                                    more =></a>
+                            </div>
+                        </div>
+                        <div class="flex-container main__column-container border-wrapper border-wrapper_padding_medium">
+                            <img src="static/bird_small.jpg" alt="Bird"
+                                class="round-pannel round-pannel_position_left round-pannel_size_medium"></img>
+                            <div>
+                                <p
+                                    class="text text_style_hyphened text_size_main-paragraph text_color_grey text_font_lato">
+                                    Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+                                </p>
+                                <a href="#"
+                                    class="link link_type_block text text_color_red text_size_main-paragraph text_font_lato">
+                                    more =></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TODO: Continue with this shred -->
+                    <div class="column-wrapper">
+                        <!-- Single column-->
+                        <h3
+                            class="heading main__column-heading text text_style_uppercase text_size_main-heading text_color_dark text_font_fjalla">
+                            Nunc dignissim risu</h3>
+                        <form class="form" id="register" action="" enctype="text/plain" name="register">
+                            <p
+                                class="text main__form-pannel__heading text_size_main-paragraph text_color_grey text_font_lato">
+                                Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus liber
+                            </p>
+                            <input class="input input_height_small main__form-pannel__input" type="text" name="name"
+                                placeholder="name ..." required form="register">
+                            <input class="input input_height_small main__form-pannel__input" type="email" name="mail"
+                                placeholder="email ..." required form="register">
+                            <textarea
+                                class="main__ff input input_height_medium input_non-resizable input_border-radius_small main__form-pannel__input"
+                                name="query" placeholder="your query ..." required form="register"></textarea>
+                            <button
+                                class="button button_border_rounded button_color_red main__send-button text text_color_white text_font_fjalla text_size_form-button text_style_uppercase"
+                                type="submit">Send <img class="button__arrow main__form-pannel__button-arrow"
+                                    src="icons/long-arrow-right.svg" alt="Arrow right"></button>
+                        </form>
+                    </div>
+
+                    <div class="column-wrapper">
+                        <h3
+                            class="heading main__column-heading text text_style_uppercase text_size_main-heading text_color_dark text_font_fjalla">
+                            Aliquam tincidunt</h3>
+                        <div class="main__info-box main__column-container border-wrapper border-wrapper_padding_medium">
+                            <img src="icons/home.svg" alt="Home" class="main__info-icon"></img>
+                            <div>
+                                <h4
+                                    class="main__colored-heading main__info-box__heading text text_size_main-subheading text_color_red text_font_lato">
+                                    Address</h4>
+                                <address
+                                    class="text text_style_hyphened text_size_main-paragraph text_color_grey text_font_lato">
+                                    some block, steet number, city name,<br>country
+                                </address>
+                            </div>
+                        </div>
+                        <div class="main__info-box main__column-container border-wrapper border-wrapper_padding_medium">
+                            <img src="icons/phone-square.svg" alt="Phone" class="main__info-icon"></img>
+                            <div>
+                                <h4
+                                    class="main__colored-heading main__info-box__heading text text_size_main-subheading text_color_red text_font_lato">
+                                    Phone</h4>
+                                <address
+                                    class="text text_style_hyphened text_size_main-paragraph text_color_grey text_font_lato">
+                                    (000) 777 777 7777<br>(000) 888 888 8888
+                                </address>
+                            </div>
+                        </div>
+                        <div class="main__info-box main__column-container border-wrapper border-wrapper_padding_medium">
+                            <img src="icons/envelope.svg" alt="Home" class="main__info-icon"></img>
+                            <div>
+                                <h4
+                                    class="main__colored-heading main__info-box__heading text text_size_main-subheading text_color_red text_font_lato">
+                                    Email us</h4>
+                                <address
+                                    class="text text_style_hyphened text_size_main-paragraph text_color_grey text_font_lato">
+                                    info@sitename.com<br>sales@sitename.com<br>company@sitename.com
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
+        <div class="content-block flex-container flex-container_centered">
+            <div>
+                <nav class="footer__navigation">
+                    <ul class="navbar">
+                        <li class="navbar__item navbar__link">
+                            <a href="#" class="link text text_color_light text_font_lato text_size_footer-nav">Home</a>
+                        </li>
+                        <li class="navbar__item navbar__link">
+                            <a href="#" class="link text text_color_light text_font_lato text_size_footer-nav">About</a>
+                        </li>
+                        <li class="navbar__item navbar__link">
+                            <a href="#"
+                                class="link text text_color_light text_font_lato text_size_footer-nav">Services</a>
+                        </li>
+                        <li class="navbar__item navbar__link">
+                            <a href="#"
+                                class="link text text_color_light text_font_lato text_size_footer-nav">Portfolio</a>
+                        </li>
+                        <li class="navbar__item navbar__link">
+                            <a href="#"
+                                class="link text text_color_light text_font_lato text_size_footer-nav">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="footer__credits text  text_color_red text_font_lato text_size_footer-nav">
+                    Designed by: <a class="link" href="#">www.alltemplateneeds.com</a>
+                </address>
+                <address class="footer__credits text  text_color_grey text_font_lato text_size_footer-nav">
+                    Images from: <a class="link" href="#">http://wallpaperswide.com/</a>
+                </address>
+                <address class="footer__credits text  text_color_grey text_font_lato text_size_footer-nav ">
+                    Copyright(c) website name.
+                </address>
+            </div>
 
+            <div>
+                <a href="#"
+                        class=" footer__round-pannel round-pannel round-pannel_position_left round-pannel_size_small round-pannel_color_red">
+                        <img src="icons/facebook.svg" alt="Facebook"
+                            class="round-pannel__facebook"></img>
+                </a>
+                <a href="#"
+                        class=" footer__round-pannel round-pannel round-pannel_position_left round-pannel_size_small round-pannel_color_red">
+                        <img src="icons/twitter.svg" alt="Twitter"
+                            class="round-pannel__twitter"></img>
+                </a>
+                <a href="#"
+                        class=" footer__round-pannel round-pannel round-pannel_position_left round-pannel_size_small round-pannel_color_red">
+                        <img src="icons/linkedin.svg" alt="LinkedIn"
+                            class="round-pannel__linkedin"></img>
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 

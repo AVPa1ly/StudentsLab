@@ -1,8 +1,21 @@
 .button {
-    display: inline-block;
     border: none;
+}
+
+.button_border_rounded {
+    border-radius: 20px;
 }
 
 .button_color_red {
     background-color: #e84c3d;
+}
+
+.button_color_dark {
+    background-color: #202628;
+}
+
+.button__arrow {
+    width: 14px;
+    height: 14px;
+    margin: auto;
 }

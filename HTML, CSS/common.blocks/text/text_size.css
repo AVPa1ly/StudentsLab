@@ -8,21 +8,50 @@
 
 .text_size_carousel-heading {
     font-size: 31px;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.08em;
 }
 
 .text_size_carousel-link {
     font-size: 15px;
+    letter-spacing: 0.08em;
 }
 
 .text_size_main-heading {
     font-size: 21px;
 }
 
+.text_size_main-subheading {
+    font-size: 20px;
+}
+
+.text_size_main-article-heading {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
 .text_size_main-paragraph {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.text_size_paragraph-button {
     font-size: 14px;
 }
 
+.text_size_form-button {
+    font-size: 15px;
+}
 .text_size_subscription-paragraph {
     font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+}
+
+.text_size_subscription-company {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.text_size_footer-nav {
+    font-size: 14px;
 }

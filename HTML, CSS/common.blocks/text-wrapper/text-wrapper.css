@@ -1,8 +1,0 @@
-.text-wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
-.text-wrapper__block-wrapper {
-    margin-right: 30px;
-}
