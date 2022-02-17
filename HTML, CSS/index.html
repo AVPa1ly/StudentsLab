@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="author" content="AVPa1ly">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: Deal with this pile of links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
@@ -35,6 +36,7 @@
     <link href="common.blocks/input/input.css" rel="stylesheet">
     <link href="common.blocks/form/form.css" rel="stylesheet">
     <link href="common.blocks/footer/footer.css" rel="stylesheet">
+    <link href="common.blocks/navlinks/navlinks.css" rel="stylesheet">
     <link href="common.blocks/subscription-panel/subscription-panel.css" rel="stylesheet">
 </head>
 
@@ -68,6 +70,7 @@
             <div class="carousel__content-block">
                 <div class="carousel__button-wrapper">
                     <button name="carousel-left" type="button" class="carousel__button carousel__button_left">
+                        <!-- TODO: From here and till the end of the document there are inline SVG-s. I guess it's not the best practice? Another question is how to scale them to the required size? -->
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="11" height="28"
                             viewBox="0 0 11 28">
                             <title>angle-left</title>
@@ -164,7 +167,7 @@
         <section class="main">
             <div class="main__content-block">
                 <div class="articles">
-                    <div class="articles__text">
+                    <div class="articles__text-wrapper">
                         <h2 class="heading articles__heading">
                             Donec
                             nec justo eget felis facilisis fermentum. Aliquam porttitor
@@ -172,7 +175,7 @@
                             <div class="articles__colored-text">
                                 Civamus vestibulum
                                 nulla nec ante</div>
-                            <div class="articles__contents">
+                            <div class="articles__contents-wrapper">
                                 <article class="articles__column-wrapper">
                                     <h3 class="articles__subheading">
                                         Sed egestas anteet </h5>
@@ -202,69 +205,79 @@
                     </div>
                     <img class="articles__image" src="static/bird.jpg" alt="Bird">
                 </div>
-                <!-- Coninue with this shred -->
                 <div class="subscription-panel main__subscription-panel">
-                    <div class="subscription-panel__citation-wrapper">
-                        <div
-                            class="round-panel round-panel__men round-panel_position_left round-panel_size_medium round-panel_color_black">
-                            <img src="icons/user.svg" alt="Rocket" class="round-panel__rocket"></img>
+                    <div class="subscription-panel__content">
+                        <div class="subscription-panel__citation-wrapper">
+                            <div class="round-panel subscription-panel__round-pannel round-panel_color_black">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="28"
+                                    viewBox="0 0 20 28">
+                                    <title>user</title>
+                                    <path fill="white"
+                                        d="M20 21.859c0 2.281-1.5 4.141-3.328 4.141h-13.344c-1.828 0-3.328-1.859-3.328-4.141 0-4.109 1.016-8.859 5.109-8.859 1.266 1.234 2.984 2 4.891 2s3.625-0.766 4.891-2c4.094 0 5.109 4.75 5.109 8.859zM16 8c0 3.313-2.688 6-6 6s-6-2.688-6-6 2.688-6 6-6 6 2.688 6 6z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h2 class="heading subscription-panel__heading heading_color_white">
+                                    Donec nec justo eget
+                                </h2>
+                                <div>
+                                    <q class="subscription-panel__quote"> Ede semper est, vitae luctus
+                                        metus libero eu augue. Morb sipo
+                                        ipiscing, commodo quis, gravida ...</q>
+                                    <span class="subscription-panel__author"> - Kohn Doe / company name</span>
+                                </div>
+                            </div>
                         </div>
                         <div>
-                            <h3 class="heading subscription-panel__heading heading_style_form">
-                                Donec nec justo eget
-                            </h3>
-                            <p class="paragraph paragraph_style_quoted">
-                                <q class="paragraph paragraph_style_quote"> Ede semper est, vitae luctus
-                                    metus libero eu augue. Morb sipo
-                                    ipiscing, commodo quis, gravida ...</q> - Kohn Doe / company name
-                            </p>
+                            <h2 class="heading subscription-panel__heading heading_color_white">
+                                Morbi vitae luctus</h2>
+                            <form class="subscription-panel__form" id="subscription" action="" enctype="text/plain"
+                                name="subscription">
+                                <input class="input subscription-panel__input" type="email" name="mail"
+                                    placeholder="eneter your email id here ..." required>
+                                <button class="button button_color_dark subscription-panel__button"
+                                    type="submit">Subscribe
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px"
+                                        height="14px" viewBox="0 0 27 25">
+                                        <title>long-arrow-right</title>
+                                        <path fill="#ffffff"
+                                            d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z">
+                                        </path>
+                                    </svg></button>
+                            </form>
                         </div>
-                    </div>
-                    <div>
-                        <h3 class="heading subscription-panel__heading heading_style_form">
-                            Morbi vitae luctus</h3>
-                        <form class="subscription-panel__form" id="subscription" action="" enctype="text/plain"
-                            name="subscription">
-                            <input class="input subscription-panel__input" type="email" name="mail"
-                                placeholder="eneter your email id here ..." required form="subscription">
-                            <button class="button button_style_form subscription-panel__button" type="submit">Subscribe
-                                <img class="button__arrow-icon" src="icons/long-arrow-right.svg"
-                                    alt="Arrow right"></button>
-                        </form>
                     </div>
                 </div>
-
+                <!-- Coninue with this shred -->
                 <div class="info-panel">
                     <div class="info-panel__column-wrapper">
-                        <h3 class="heading info-panel__column-heading heading_style_column-heading">
-                            Aliquam tincidunt</h3>
-                        <div class="info-panel__line-container border-wrapper border-wrapper_padding_medium">
-                            <img src="static/face.jpg" alt="Women"
-                                class="round-panel round-panel_position_left round-panel_size_medium"></img>
+                        <h2 class="heading info-panel__column-heading">
+                            Aliquam tincidunt</h2>
+                        <div class="info-panel__line-container">
+                            <img src="static/face.jpg" alt="Women" class="info-pannel__round-image"></img>
                             <div>
-                                <p class="paragraph paragraph_hyphened">
+                                <p class="paragraph paragraph_hyphened info-panel__paragraph">
                                     Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
                                     <a href="#" class="link info-panel__link">
                                         more =></a>
                                 </p>
                             </div>
                         </div>
-                        <div class="info-panel__line-container border-wrapper border-wrapper_padding_medium">
-                            <img src="static/cage.jpg" alt="Cage"
-                                class="round-panel round-panel_position_left round-panel_size_medium"></img>
+                        <div class="info-panel__line-container">
+                            <img src="static/cage.jpg" alt="Cage" class="info-pannel__round-image"></img>
                             <div>
-                                <p class="paragraph paragraph_hyphened">
+                                <p class="paragraph paragraph_hyphened info-panel__paragraph">
                                     Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
                                     <a href="#" class="link info-panel__link">
                                         more =></a>
                                 </p>
                             </div>
                         </div>
-                        <div class="info-panel__line-container border-wrapper border-wrapper_padding_medium">
-                            <img src="static/bird_small.jpg" alt="Bird"
-                                class="round-panel round-panel_position_left round-panel_size_medium"></img>
+                        <div class="info-panel__line-container">
+                            <img src="static/bird_small.jpg" alt="Bird" class="info-pannel__round-image"></img>
                             <div>
-                                <p class="paragraph paragraph_hyphened">
+                                <p class="paragraph paragraph_hyphened info-panel__paragraph">
                                     Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
                                     <a href="#" class="link info-panel__link">
                                         more =></a>
@@ -274,54 +287,75 @@
                     </div>
 
                     <div class="info-panel__column-wrapper">
-                        <h3 class="heading info-panel__column-heading heading_style_column-heading">
-                            Nunc dignissim risu</h3>
-                        <form class="paragraph form__paragraph form" id="register" action="" enctype="text/plain"
-                            name="register">
-
-                            Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus liber
-
-                            <input class="input form__input" type="text" name="name" placeholder="name ..." required
-                                form="register">
-                            <input class="input form__input" type="email" name="mail" placeholder="email ..." required
-                                form="register">
-                            <textarea class="input form__input input_style_textarea" name="query"
-                                placeholder="your query ..." required form="register"></textarea>
-                            <button class="button form__button" type="submit">Send <img
-                                    class="button__arrow-icon form__button-arrow" src="icons/long-arrow-right.svg"
-                                    alt="Arrow right"></button>
+                        <h2 class="heading info-panel__column-heading">
+                            Nunc dignissim risu</h2>
+                        <form class="form" id="register" action="" enctype="text/plain" name="register">
+                            <p class="paragraph form__paragraph">
+                                <!-- TODO: Is it worth additional <p> tag or better embed this text in the beggining of <form> tag?-->
+                                Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus liber
+                            </p>
+                            <input class="input form__input" type="text" name="name" placeholder="name ..." required>
+                            <input class="input form__input" type="email" name="mail" placeholder="email ..." required>
+                            <textarea class="input form__input form__input_high" name="query"
+                                placeholder="your query ..." required></textarea>
+                            <button class="button form__button" type="submit">Send
+                                <svg class="form__button-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px"
+                                    y="0px" width="13px" height="14px" viewBox="0 0 27 25">
+                                    <title>long-arrow-right</title>
+                                    <path fill="#ffffff"
+                                        d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z">
+                                    </path>
+                                </svg></button>
                         </form>
                     </div>
 
                     <div class="info-panel__column-wrapper">
-                        <h3 class="heading info-panel__column-heading heading_style_column-heading">
-                            Aliquam tincidunt</h3>
-                        <div class="info-panel__line-container border-wrapper border-wrapper_padding_medium">
-                            <img src="icons/home.svg" alt="Home" class="info-panel__icon"></img>
+                        <h2 class="heading info-panel__column-heading">
+                            Aliquam tincidunt</h2>
+                        <div class="info-panel__info-container">
+                            <svg class="info-panel__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="26"
+                                height="28" viewBox="0 0 26 28">
+                                <title>home</title>
+                                <path
+                                    d="M22 15.5v7.5c0 0.547-0.453 1-1 1h-6v-6h-4v6h-6c-0.547 0-1-0.453-1-1v-7.5c0-0.031 0.016-0.063 0.016-0.094l8.984-7.406 8.984 7.406c0.016 0.031 0.016 0.063 0.016 0.094zM25.484 14.422l-0.969 1.156c-0.078 0.094-0.203 0.156-0.328 0.172h-0.047c-0.125 0-0.234-0.031-0.328-0.109l-10.813-9.016-10.813 9.016c-0.109 0.078-0.234 0.125-0.375 0.109-0.125-0.016-0.25-0.078-0.328-0.172l-0.969-1.156c-0.172-0.203-0.141-0.531 0.063-0.703l11.234-9.359c0.656-0.547 1.719-0.547 2.375 0l3.813 3.187v-3.047c0-0.281 0.219-0.5 0.5-0.5h3c0.281 0 0.5 0.219 0.5 0.5v6.375l3.422 2.844c0.203 0.172 0.234 0.5 0.063 0.703z">
+                                </path>
+                            </svg>
                             <div>
-                                <h4 class="heading_style_info info-panel__heading">
-                                    Address</h4>
-                                <address class="paragraph">
+                                <h3 class="info-panel__heading">
+                                    Address</h3>
+                                <address class="info-pannel__address">
                                     some block, steet number, city name,<br>country
                                 </address>
                             </div>
                         </div>
-                        <div class="info-panel__line-container border-wrapper border-wrapper_padding_medium">
-                            <img src="icons/phone-square.svg" alt="Phone" class="info-panel__icon"></img>
+                        <div class="info-panel__info-container">
+                            <svg class="info-panel__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="28" viewBox="0 0 24 28">
+                                <title>phone-square</title>
+                                <path
+                                    d="M20 18.641c0-0.078 0-0.172-0.031-0.25-0.094-0.281-2.375-1.437-2.812-1.687-0.297-0.172-0.656-0.516-1.016-0.516-0.688 0-1.703 2.047-2.312 2.047-0.313 0-0.703-0.281-0.984-0.438-2.063-1.156-3.484-2.578-4.641-4.641-0.156-0.281-0.438-0.672-0.438-0.984 0-0.609 2.047-1.625 2.047-2.312 0-0.359-0.344-0.719-0.516-1.016-0.25-0.438-1.406-2.719-1.687-2.812-0.078-0.031-0.172-0.031-0.25-0.031-0.406 0-1.203 0.187-1.578 0.344-1.031 0.469-1.781 2.438-1.781 3.516 0 1.047 0.422 2 0.781 2.969 1.25 3.422 4.969 7.141 8.391 8.391 0.969 0.359 1.922 0.781 2.969 0.781 1.078 0 3.047-0.75 3.516-1.781 0.156-0.375 0.344-1.172 0.344-1.578zM24 6.5v15c0 2.484-2.016 4.5-4.5 4.5h-15c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15c2.484 0 4.5 2.016 4.5 4.5z">
+                                </path>
+                            </svg>
                             <div>
-                                <h4 class="heading_style_info info-panel__heading">
-                                    Phone</h4>
-                                <address class="paragraph">
+                                <h3 class="info-panel__heading">
+                                    Phone</h3>
+                                <address class="info-pannel__address">
                                     (000) 777 777 7777<br>(000) 888 888 8888
                                 </address>
                             </div>
                         </div>
-                        <div class="info-panel__line-container border-wrapper border-wrapper_padding_medium">
-                            <img src="icons/envelope.svg" alt="Home" class="info-panel__icon"></img>
+                        <div class="info-panel__info-container">
+                            <svg class="info-panel__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="28"
+                                height="28" viewBox="0 0 28 28">
+                                <title>envelope</title>
+                                <path
+                                    d="M28 11.094v12.406c0 1.375-1.125 2.5-2.5 2.5h-23c-1.375 0-2.5-1.125-2.5-2.5v-12.406c0.469 0.516 1 0.969 1.578 1.359 2.594 1.766 5.219 3.531 7.766 5.391 1.313 0.969 2.938 2.156 4.641 2.156h0.031c1.703 0 3.328-1.188 4.641-2.156 2.547-1.844 5.172-3.625 7.781-5.391 0.562-0.391 1.094-0.844 1.563-1.359zM28 6.5c0 1.75-1.297 3.328-2.672 4.281-2.438 1.687-4.891 3.375-7.313 5.078-1.016 0.703-2.734 2.141-4 2.141h-0.031c-1.266 0-2.984-1.437-4-2.141-2.422-1.703-4.875-3.391-7.297-5.078-1.109-0.75-2.688-2.516-2.688-3.938 0-1.531 0.828-2.844 2.5-2.844h23c1.359 0 2.5 1.125 2.5 2.5z">
+                                </path>
+                            </svg>
                             <div>
-                                <h4 class="heading_style_info info-panel__heading">
-                                    Email us</h4>
-                                <address class="paragraph">
+                                <h3 class="info-panel__heading">
+                                    Email us</h3>
+                                <address class="info-pannel__address">
                                     info@sitename.com<br>sales@sitename.com<br>company@sitename.com
                                 </address>
                             </div>
@@ -335,55 +369,64 @@
     <footer class="footer">
         <div class="footer__content-block">
             <div>
-                <nav class="footer__navigation">
-                    <ul class="navbar">
-                        <li class="navbar__item navbar__link">
-                            <a href="#" class="link text text_color_light text_font_lato text_size_footer-nav">Home</a>
+                <nav class="footer__navlinks">
+                    <ul class="navlinks">
+                        <li class="navlinks__item">
+                            <a href="#" class="navlinks__link">Home</a>
                         </li>
-                        <li class="navbar__item navbar__link">
-                            <a href="#" class="link text text_color_light text_font_lato text_size_footer-nav">About</a>
+                        <li class="navlinks__item">
+                            <a href="#" class="navlinks__link">About</a>
                         </li>
-                        <li class="navbar__item navbar__link">
-                            <a href="#"
-                                class="link text text_color_light text_font_lato text_size_footer-nav">Services</a>
+                        <li class="navlinks__item">
+                            <a href="#" class="navlinks__link">Services</a>
                         </li>
-                        <li class="navbar__item navbar__link">
-                            <a href="#"
-                                class="link text text_color_light text_font_lato text_size_footer-nav">Portfolio</a>
+                        <li class="navlinks__item">
+                            <a href="#" class="navlinks__link">Portfolio</a>
                         </li>
-                        <li class="navbar__item navbar__link">
-                            <a href="#"
-                                class="link text text_color_light text_font_lato text_size_footer-nav">Contact</a>
+                        <li class="navlinks__item">
+                            <a href="#" class="navlinks__link">Contact</a>
                         </li>
                     </ul>
                 </nav>
-                <address class="footer__credits text  text_color_red text_font_lato text_size_footer-nav">
-                    Designed by: <a class="link" href="#">www.alltemplateneeds.com</a>
+                <address class="footer__credits">
+                    Designed by: <a class="footer__credits-link" href="#">www.alltemplateneeds.com</a>
                 </address>
-                <address class="footer__credits text  text_color_grey text_font_lato text_size_footer-nav">
-                    Images from: <a class="link" href="http://wallpaperswide.com/">http://wallpaperswide.com/</a>
+                <address class="footer__credits footer__credits_color_grey">
+                    Images from: <a class="footer__credits-link"
+                        href="http://wallpaperswide.com">http://wallpaperswide.com</a>
                 </address>
-                <address class="footer__credits text  text_color_grey text_font_lato text_size_footer-nav ">
+                <address class="footer__credits footer__credits_color_grey">
                     Copyright(c) website name.
                 </address>
             </div>
 
-            <div>
-                <a href="http://facebook.com"
-                    class=" footer__round-panel round-panel round-panel_position_left round-panel_size_small round-panel_color_red">
-                    <img src="icons/facebook.svg" alt="Facebook" class="round-panel__facebook"></img>
+            <div class="footer__rounds-wrapper">
+                <a href="http://facebook.com" class="footer__round-link">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="28" viewBox="0 0 16 28">
+                        <title>facebook</title>
+                        <path fill="#ffffff"
+                            d="M14.984 0.187v4.125h-2.453c-1.922 0-2.281 0.922-2.281 2.25v2.953h4.578l-0.609 4.625h-3.969v11.859h-4.781v-11.859h-3.984v-4.625h3.984v-3.406c0-3.953 2.422-6.109 5.953-6.109 1.687 0 3.141 0.125 3.563 0.187z">
+                        </path>
+                    </svg>
                 </a>
-                <a href="http://twitter.com"
-                    class=" footer__round-panel round-panel round-panel_position_left round-panel_size_small round-panel_color_red">
-                    <img src="icons/twitter.svg" alt="Twitter" class="round-panel__twitter"></img>
+                <a href="http://twitter.com" class="footer__round-link">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28">
+                        <title>twitter</title>
+                        <path fill="#ffffff"
+                            d="M25.312 6.375c-0.688 1-1.547 1.891-2.531 2.609 0.016 0.219 0.016 0.438 0.016 0.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-0.828-7.75-2.266 0.406 0.047 0.797 0.063 1.219 0.063 2.359 0 4.531-0.797 6.266-2.156-2.219-0.047-4.078-1.5-4.719-3.5 0.313 0.047 0.625 0.078 0.953 0.078 0.453 0 0.906-0.063 1.328-0.172-2.312-0.469-4.047-2.5-4.047-4.953v-0.063c0.672 0.375 1.453 0.609 2.281 0.641-1.359-0.906-2.25-2.453-2.25-4.203 0-0.938 0.25-1.797 0.688-2.547 2.484 3.062 6.219 5.063 10.406 5.281-0.078-0.375-0.125-0.766-0.125-1.156 0-2.781 2.25-5.047 5.047-5.047 1.453 0 2.766 0.609 3.687 1.594 1.141-0.219 2.234-0.641 3.203-1.219-0.375 1.172-1.172 2.156-2.219 2.781 1.016-0.109 2-0.391 2.906-0.781z">
+                        </path>
+                    </svg>
                 </a>
-                <a href="http://linkedin.com"
-                    class=" footer__round-panel round-panel round-panel_position_left round-panel_size_small round-panel_color_red">
-                    <img src="icons/linkedin.svg" alt="LinkedIn" class="round-panel__linkedin"></img>
+                <a href="http://linkedin.com" class="footer__round-link">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28">
+                        <title>linkedin</title>
+                        <path fill="#ffffff"
+                            d="M5.453 9.766v15.484h-5.156v-15.484h5.156zM5.781 4.984c0.016 1.484-1.109 2.672-2.906 2.672v0h-0.031c-1.734 0-2.844-1.188-2.844-2.672 0-1.516 1.156-2.672 2.906-2.672 1.766 0 2.859 1.156 2.875 2.672zM24 16.375v8.875h-5.141v-8.281c0-2.078-0.75-3.5-2.609-3.5-1.422 0-2.266 0.953-2.641 1.875-0.125 0.344-0.172 0.797-0.172 1.266v8.641h-5.141c0.063-14.031 0-15.484 0-15.484h5.141v2.25h-0.031c0.672-1.062 1.891-2.609 4.672-2.609 3.391 0 5.922 2.219 5.922 6.969z">
+                        </path>
+                    </svg>
                 </a>
             </div>
         </div>
     </footer>
 </body>
-
 </html>

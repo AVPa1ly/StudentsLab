@@ -24,21 +24,3 @@
 .navbar__item:hover {
     background-color: #e84c3d;
 }
-
-.navbar__link {
-    display: inline-block;
-    box-sizing: border-box;
-    text-align: center;
-    margin-right: 40px;
-}
-
-.navbar__link::after {
-    content: '/';
-    color: #515759;
-    position: relative;
-    left: 20px; /* Half the size of margin-right */
-}
-
-.navbar__link:last-of-type::after {
-    content: '';
-}

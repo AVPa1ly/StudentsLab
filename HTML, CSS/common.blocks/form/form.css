@@ -1,12 +1,12 @@
 .form {
     background-color: #e7e7e7;
     border-radius: 5px;
-    padding: 33px 30px 29px;
+    padding: 29px 30px;
 }
 
 .form__input {
     width: 310px;
-    margin-bottom: 20px; /* TODO: No margin collapsing for some reason, needs to be 20px margin between each input */
+    margin-bottom: 20px;
 }
 
 .form__input:first-child {
@@ -14,13 +14,23 @@
 }
 
 .form__paragraph {
-    margin-bottom: 29px;
+    margin: 0 0 26px;
 }
 
 .form__button {
-    padding: 11px 20px 11px;
+    min-height: 41px;
+    min-width: 100px;
 }
 
 .form__button-arrow {
-    margin-left: 10px; /* TODO: Counted 15px margin-left in PS, actually fits 10px for some (probably, measurement) reason */
+    margin-left: 5px;
+}
+
+.form__input_high { /* TODO: Or it must be a modifier of input (kind of input_high)? */
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    resize: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 82px;
 }

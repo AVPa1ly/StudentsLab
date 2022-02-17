@@ -1,8 +1,11 @@
 .subscription-panel {
-    display: flex;
-    justify-content: space-between;
     background-color: #e84c3d;
     border-radius: 11px;
+}
+
+.subscription-panel__content {
+    display: flex;
+    justify-content: space-between;
 }
 
 .subscription-panel__citation-wrapper {
@@ -10,8 +13,11 @@
     width: 536px;
 }
 
+.subscription-panel__round-pannel {
+    margin-right: 30px;
+}
+
 .subscription-panel__input {
-    display: inline-block;
     width: 380px;
     margin-right: 9px;
 }
@@ -21,9 +27,26 @@
 }
 
 .subscription-panel__heading {
-    margin-bottom: 25px;
+    margin: 0 0 25px;
 }
 
 .subscription-panel__button {
-    padding: 10px 20px 11px 22px; /* TODO: padding top and bottom values do not match PS calculations */
+    min-height: 41px;
+    min-width: 120px;
+}
+
+.subscription-panel__quote {
+    font-family: 'Lato', sans-serif;
+    line-height: 24px;
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.subscription-panel__author {
+    font-family: 'Lato', sans-serif;
+    line-height: 24px;
+    color: white;
+    font-size: 14px;
+    font-style: italic;
 }

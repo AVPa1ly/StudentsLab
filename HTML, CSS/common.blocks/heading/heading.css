@@ -10,25 +10,3 @@
 .heading_color_white {
     color: white;
 }
-
-.heading_style_items-panel {
-    font-size: 21px;
-    color: #202628;
-}
-
-.heading_style_form {
-    font-size: 21px;
-    color: white
-}
-
-.heading_style_column-heading {
-    font-size: 21px;
-    color: #202628;
-}
-
-.heading_style_info {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px; /* TODO: Size unknown */
-    color: #e84c3d;
-    font-weight: bold;
-}

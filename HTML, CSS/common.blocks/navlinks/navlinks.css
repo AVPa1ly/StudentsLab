@@ -1,0 +1,33 @@
+.navlinks {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navlinks__item {
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.navlinks__item::after {
+    content: '/';
+    color: #515759;
+    position: relative;
+    left: 20px; /* Half the size of margin-right */
+}
+
+.navlinks__item:last-of-type::after {
+    content: '';
+}
+
+.navlinks__link {
+    color: #e7e7e7;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 0.08em;
+}

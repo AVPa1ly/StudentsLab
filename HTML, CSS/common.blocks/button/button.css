@@ -8,6 +8,7 @@
     font-family: 'Fjalla One', sans-serif;
     font-size: 15px;
     letter-spacing: 0.04em;
+    cursor: pointer;
 }
 
 .button__arrow-icon {
@@ -16,6 +17,6 @@
     margin: auto;
 }
 
-.button_style_form {
+.button_color_dark {
     background-color: #202628;
 }

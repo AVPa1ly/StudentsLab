@@ -10,20 +10,7 @@
     width: 1170px;
 }
 
-.main__column-heading {
-    margin-bottom: 29px;
-}
-
 .main__subscription-panel {
     padding: 50px 30px;
     margin: 80px 0;
-}
-
-.main__info-icon {
-    margin-right: 22px;
-    align-self: flex-start;
-}
-
-.main__info-box__heading {
-    margin-bottom: -1px; /* TODO: Huge question on this infobox. What's so wrong about it? */
 }

@@ -9,13 +9,13 @@
     width: 600px;
 }
 
-.articles__contents {
+.articles__contents-wrapper {
     display: flex;
     justify-content: space-between;
 }
 
-.articles__text {
-    width: 770px; /* TODO: value = items-panel__column-wrapper * 2 */
+.articles__text-wrapper {
+    width: 770px; /* TODO: This hardcoded value equals items-panel__column-wrapper * 2. A better solution for this kind of wrap? */
 }
 
 .articles__column-wrapper {

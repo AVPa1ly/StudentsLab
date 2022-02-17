@@ -3,8 +3,5 @@
     text-decoration: none;
     color: #e84c3d;
     font-size: inherit;
-}
-
-.link_type_block {
-    display: block;
+    line-height: 24px;
 }
