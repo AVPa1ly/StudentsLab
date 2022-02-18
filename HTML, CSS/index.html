@@ -6,41 +6,87 @@
     <meta charset="utf-8">
     <meta name="author" content="AVPa1ly">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- TODO: Deal with this pile of links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
-    <link href="common.blocks/header/header.css" rel="stylesheet">
-    <link href="common.blocks/heading/heading.css" rel="stylesheet">
-    <link href="common.blocks/paragraph/paragraph.css" rel="stylesheet">
-    <link href="common.blocks/articles/articles.css" rel="stylesheet">
-    <link href="common.blocks/text/text.css" rel="stylesheet">
-    <link href="common.blocks/text/text_font.css" rel="stylesheet">
-    <link href="common.blocks/text/text_size.css" rel="stylesheet">
-    <link href="common.blocks/text/text_color.css" rel="stylesheet">
-    <link href="common.blocks/navbar/navbar.css" rel="stylesheet">
-    <link href="common.blocks/link/link.css" rel="stylesheet">
-    <link href="common.blocks/carousel/carousel.css" rel="stylesheet">
-    <link href="common.blocks/button/button.css" rel="stylesheet">
-    <link href="common.blocks/items-panel/items-panel.css" rel="stylesheet">
-    <link href="common.blocks/round-panel/round-panel.css" rel="stylesheet">
-    <link href="common.blocks/border-wrapper/border-wrapper.css" rel="stylesheet">
-    <link href="common.blocks/heading/heading.css" rel="stylesheet">
-    <link href="common.blocks/flex-container/flex-container.css" rel="stylesheet">
-    <link href="common.blocks/info-panel/info-panel.css" rel="stylesheet">
     <link href="common.blocks/main/main.css" rel="stylesheet">
-    <link href="common.blocks/input/input.css" rel="stylesheet">
-    <link href="common.blocks/form/form.css" rel="stylesheet">
-    <link href="common.blocks/footer/footer.css" rel="stylesheet">
-    <link href="common.blocks/navlinks/navlinks.css" rel="stylesheet">
-    <link href="common.blocks/subscription-panel/subscription-panel.css" rel="stylesheet">
 </head>
 
 <body>
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-user" viewBox="0 0 20 28">
+                <path
+                    d="M20 21.859c0 2.281-1.5 4.141-3.328 4.141h-13.344c-1.828 0-3.328-1.859-3.328-4.141 0-4.109 1.016-8.859 5.109-8.859 1.266 1.234 2.984 2 4.891 2s3.625-0.766 4.891-2c4.094 0 5.109 4.75 5.109 8.859zM16 8c0 3.313-2.688 6-6 6s-6-2.688-6-6 2.688-6 6-6 6 2.688 6 6z">
+                </path>
+            </symbol>
+            <symbol id="icon-home" viewBox="0 0 26 28">
+                <path
+                    d="M22 15.5v7.5c0 0.547-0.453 1-1 1h-6v-6h-4v6h-6c-0.547 0-1-0.453-1-1v-7.5c0-0.031 0.016-0.063 0.016-0.094l8.984-7.406 8.984 7.406c0.016 0.031 0.016 0.063 0.016 0.094zM25.484 14.422l-0.969 1.156c-0.078 0.094-0.203 0.156-0.328 0.172h-0.047c-0.125 0-0.234-0.031-0.328-0.109l-10.813-9.016-10.813 9.016c-0.109 0.078-0.234 0.125-0.375 0.109-0.125-0.016-0.25-0.078-0.328-0.172l-0.969-1.156c-0.172-0.203-0.141-0.531 0.063-0.703l11.234-9.359c0.656-0.547 1.719-0.547 2.375 0l3.813 3.187v-3.047c0-0.281 0.219-0.5 0.5-0.5h3c0.281 0 0.5 0.219 0.5 0.5v6.375l3.422 2.844c0.203 0.172 0.234 0.5 0.063 0.703z">
+                </path>
+            </symbol>
+            <symbol id="icon-phone-square" viewBox="0 0 24 28">
+                <path
+                    d="M20 18.641c0-0.078 0-0.172-0.031-0.25-0.094-0.281-2.375-1.437-2.812-1.687-0.297-0.172-0.656-0.516-1.016-0.516-0.688 0-1.703 2.047-2.312 2.047-0.313 0-0.703-0.281-0.984-0.438-2.063-1.156-3.484-2.578-4.641-4.641-0.156-0.281-0.438-0.672-0.438-0.984 0-0.609 2.047-1.625 2.047-2.312 0-0.359-0.344-0.719-0.516-1.016-0.25-0.438-1.406-2.719-1.687-2.812-0.078-0.031-0.172-0.031-0.25-0.031-0.406 0-1.203 0.187-1.578 0.344-1.031 0.469-1.781 2.438-1.781 3.516 0 1.047 0.422 2 0.781 2.969 1.25 3.422 4.969 7.141 8.391 8.391 0.969 0.359 1.922 0.781 2.969 0.781 1.078 0 3.047-0.75 3.516-1.781 0.156-0.375 0.344-1.172 0.344-1.578zM24 6.5v15c0 2.484-2.016 4.5-4.5 4.5h-15c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15c2.484 0 4.5 2.016 4.5 4.5z">
+                </path>
+            </symbol>
+            <symbol id="icon-twitter" viewBox="0 0 26 28">
+                <path
+                    d="M25.312 6.375c-0.688 1-1.547 1.891-2.531 2.609 0.016 0.219 0.016 0.438 0.016 0.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-0.828-7.75-2.266 0.406 0.047 0.797 0.063 1.219 0.063 2.359 0 4.531-0.797 6.266-2.156-2.219-0.047-4.078-1.5-4.719-3.5 0.313 0.047 0.625 0.078 0.953 0.078 0.453 0 0.906-0.063 1.328-0.172-2.312-0.469-4.047-2.5-4.047-4.953v-0.063c0.672 0.375 1.453 0.609 2.281 0.641-1.359-0.906-2.25-2.453-2.25-4.203 0-0.938 0.25-1.797 0.688-2.547 2.484 3.062 6.219 5.063 10.406 5.281-0.078-0.375-0.125-0.766-0.125-1.156 0-2.781 2.25-5.047 5.047-5.047 1.453 0 2.766 0.609 3.687 1.594 1.141-0.219 2.234-0.641 3.203-1.219-0.375 1.172-1.172 2.156-2.219 2.781 1.016-0.109 2-0.391 2.906-0.781z">
+                </path>
+            </symbol>
+            <symbol id="icon-facebook" viewBox="0 0 16 28">
+                <path
+                    d="M14.984 0.187v4.125h-2.453c-1.922 0-2.281 0.922-2.281 2.25v2.953h4.578l-0.609 4.625h-3.969v11.859h-4.781v-11.859h-3.984v-4.625h3.984v-3.406c0-3.953 2.422-6.109 5.953-6.109 1.687 0 3.141 0.125 3.563 0.187z">
+                </path>
+            </symbol>
+            <symbol id="icon-envelope" viewBox="0 0 28 28">
+                <path
+                    d="M28 11.094v12.406c0 1.375-1.125 2.5-2.5 2.5h-23c-1.375 0-2.5-1.125-2.5-2.5v-12.406c0.469 0.516 1 0.969 1.578 1.359 2.594 1.766 5.219 3.531 7.766 5.391 1.313 0.969 2.938 2.156 4.641 2.156h0.031c1.703 0 3.328-1.188 4.641-2.156 2.547-1.844 5.172-3.625 7.781-5.391 0.562-0.391 1.094-0.844 1.563-1.359zM28 6.5c0 1.75-1.297 3.328-2.672 4.281-2.438 1.687-4.891 3.375-7.313 5.078-1.016 0.703-2.734 2.141-4 2.141h-0.031c-1.266 0-2.984-1.437-4-2.141-2.422-1.703-4.875-3.391-7.297-5.078-1.109-0.75-2.688-2.516-2.688-3.938 0-1.531 0.828-2.844 2.5-2.844h23c1.359 0 2.5 1.125 2.5 2.5z">
+                </path>
+            </symbol>
+            <symbol id="icon-linkedin" viewBox="0 0 24 28">
+                <path
+                    d="M5.453 9.766v15.484h-5.156v-15.484h5.156zM5.781 4.984c0.016 1.484-1.109 2.672-2.906 2.672v0h-0.031c-1.734 0-2.844-1.188-2.844-2.672 0-1.516 1.156-2.672 2.906-2.672 1.766 0 2.859 1.156 2.875 2.672zM24 16.375v8.875h-5.141v-8.281c0-2.078-0.75-3.5-2.609-3.5-1.422 0-2.266 0.953-2.641 1.875-0.125 0.344-0.172 0.797-0.172 1.266v8.641h-5.141c0.063-14.031 0-15.484 0-15.484h5.141v2.25h-0.031c0.672-1.062 1.891-2.609 4.672-2.609 3.391 0 5.922 2.219 5.922 6.969z">
+                </path>
+            </symbol>
+            <symbol id="icon-angle-left" viewBox="0 0 11 28">
+                <path
+                    d="M9.797 8.5c0 0.125-0.063 0.266-0.156 0.359l-6.141 6.141 6.141 6.141c0.094 0.094 0.156 0.234 0.156 0.359s-0.063 0.266-0.156 0.359l-0.781 0.781c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-7.281-7.281c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l7.281-7.281c0.094-0.094 0.234-0.156 0.359-0.156s0.266 0.063 0.359 0.156l0.781 0.781c0.094 0.094 0.156 0.219 0.156 0.359z">
+                </path>
+            </symbol>
+            <symbol id="icon-angle-right" viewBox="0 0 9 28">
+                <path
+                    d="M9.297 15c0 0.125-0.063 0.266-0.156 0.359l-7.281 7.281c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-0.781-0.781c-0.094-0.094-0.156-0.219-0.156-0.359 0-0.125 0.063-0.266 0.156-0.359l6.141-6.141-6.141-6.141c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l0.781-0.781c0.094-0.094 0.234-0.156 0.359-0.156s0.266 0.063 0.359 0.156l7.281 7.281c0.094 0.094 0.156 0.234 0.156 0.359z">
+                </path>
+            </symbol>
+            <symbol id="icon-shield" viewBox="0 0 20 28">
+                <path
+                    d="M17 15v-10h-7v17.766c0.797-0.422 2.078-1.156 3.328-2.141 1.672-1.313 3.672-3.359 3.672-5.625zM20 3v12c0 6.578-9.203 10.734-9.594 10.906-0.125 0.063-0.266 0.094-0.406 0.094s-0.281-0.031-0.406-0.094c-0.391-0.172-9.594-4.328-9.594-10.906v-12c0-0.547 0.453-1 1-1h18c0.547 0 1 0.453 1 1z">
+                </path>
+            </symbol>
+            <symbol id="icon-fire-extinguisher" viewBox="0 0 22 28">
+                <path
+                    d="M8 3c0-0.547-0.453-1-1-1s-1 0.453-1 1 0.453 1 1 1 1-0.453 1-1zM22 2.5v5c0 0.156-0.063 0.297-0.187 0.391-0.094 0.078-0.203 0.109-0.313 0.109-0.031 0-0.063 0-0.109-0.016l-7-1.5c-0.219-0.047-0.391-0.25-0.391-0.484h-4v1.594c2.281 0.469 4 2.484 4 4.906v12.5c0 0.547-0.453 1-1 1h-8c-0.547 0-1-0.453-1-1v-12.5c0-2.234 1.469-4.141 3.5-4.766v-1.734h-0.5c-3.313 0-5.094 3.422-5.109 3.453-0.172 0.344-0.531 0.547-0.891 0.547-0.156 0-0.313-0.031-0.453-0.109-0.484-0.25-0.688-0.844-0.438-1.344 0.078-0.156 1.641-3.187 4.781-4.203-0.234-0.391-0.391-0.844-0.391-1.344 0-1.375 1.125-2.5 2.5-2.5s2.5 1.125 2.5 2.5c0 0.359-0.078 0.688-0.219 1h4.719c0-0.234 0.172-0.438 0.391-0.484l7-1.5c0.047-0.016 0.078-0.016 0.109-0.016 0.109 0 0.219 0.031 0.313 0.109 0.125 0.094 0.187 0.234 0.187 0.391z">
+                </path>
+            </symbol>
+            <symbol id="icon-rocket" viewBox="0 0 26 28">
+                <path
+                    d="M22.5 7c0-0.828-0.672-1.5-1.5-1.5s-1.5 0.672-1.5 1.5 0.672 1.5 1.5 1.5 1.5-0.672 1.5-1.5zM26 2.5c0 5.187-1.437 8.641-5.141 12.359-0.906 0.891-1.937 1.813-3.047 2.75l-0.313 5.922c-0.016 0.156-0.109 0.313-0.25 0.406l-6 3.5c-0.078 0.047-0.156 0.063-0.25 0.063-0.125 0-0.25-0.047-0.359-0.141l-1-1c-0.125-0.141-0.172-0.328-0.125-0.5l1.328-4.312-4.391-4.391-4.312 1.328c-0.047 0.016-0.094 0.016-0.141 0.016-0.125 0-0.266-0.047-0.359-0.141l-1-1c-0.156-0.172-0.187-0.422-0.078-0.609l3.5-6c0.094-0.141 0.25-0.234 0.406-0.25l5.922-0.313c0.938-1.109 1.859-2.141 2.75-3.047 3.906-3.891 6.891-5.141 12.328-5.141 0.281 0 0.531 0.219 0.531 0.5z">
+                </path>
+            </symbol>
+            <symbol id="icon-long-arrow-right" viewBox="0 0 27 28">
+                <path
+                    d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z">
+                </path>
+            </symbol>
+        </defs>
+    </svg>
+
     <header class="header">
         <div class="header__content-block">
             <div class="header__sitename">Site Name</div>
@@ -70,256 +116,269 @@
             <div class="carousel__content-block">
                 <div class="carousel__button-wrapper">
                     <button name="carousel-left" type="button" class="carousel__button carousel__button_left">
-                        <!-- TODO: From here and till the end of the document there are inline SVG-s. I guess it's not the best practice? Another question is how to scale them to the required size? -->
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="11" height="28"
-                            viewBox="0 0 11 28">
-                            <title>angle-left</title>
-                            <path fill="#2c3031"
-                                d="M9.797 8.5c0 0.125-0.063 0.266-0.156 0.359l-6.141 6.141 6.141 6.141c0.094 0.094 0.156 0.234 0.156 0.359s-0.063 0.266-0.156 0.359l-0.781 0.781c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-7.281-7.281c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l7.281-7.281c0.094-0.094 0.234-0.156 0.359-0.156s0.266 0.063 0.359 0.156l0.781 0.781c0.094 0.094 0.156 0.219 0.156 0.359z">
-                            </path>
+                        <svg class="icon icon_color_grey icon__angle-left">
+                            <use xlink:href="#icon-angle-left"></use>
                         </svg>
                     </button>
                     <button name="carousel-right" type="button" class="carousel__button carousel__button_right">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="9" height="28" viewBox="0 0 9 28">
-                            <title>angle-right</title>
-                            <path fill="#2c3031"
-                                d="M9.297 15c0 0.125-0.063 0.266-0.156 0.359l-7.281 7.281c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-0.781-0.781c-0.094-0.094-0.156-0.219-0.156-0.359 0-0.125 0.063-0.266 0.156-0.359l6.141-6.141-6.141-6.141c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l0.781-0.781c0.094-0.094 0.234-0.156 0.359-0.156s0.266 0.063 0.359 0.156l7.281 7.281c0.094 0.094 0.156 0.234 0.156 0.359z">
-                            </path>
+                        <svg class="icon icon_color_grey icon__angle-right">
+                            <use xlink:href="#icon-angle-right"></use>
                         </svg>
                     </button>
                 </div>
-                <h1 class="carousel__heading">
+                <h1 class="carousel__heading carousel__heading_lined">
                     Clivuam tinc</h1>
                 <h1 class="carousel__heading">
                     Nunc dignissim risus id metus</h1>
                 <a href="http://wallpaperswide.com/" class="carousel__link">http://wallpaperswide.com/</a>
             </div>
         </section>
-
         <section class="items-panel">
             <div class="items-panel__content-block">
-                <div class="items-panel__column-wrapper">
-                    <div class="round-panel items-panel__round-panel">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="28"
-                            viewBox="0 0 26 28">
-                            <title>rocket</title>
-                            <path fill="#ffffff"
-                                d="M22.5 7c0-0.828-0.672-1.5-1.5-1.5s-1.5 0.672-1.5 1.5 0.672 1.5 1.5 1.5 1.5-0.672 1.5-1.5zM26 2.5c0 5.187-1.437 8.641-5.141 12.359-0.906 0.891-1.937 1.813-3.047 2.75l-0.313 5.922c-0.016 0.156-0.109 0.313-0.25 0.406l-6 3.5c-0.078 0.047-0.156 0.063-0.25 0.063-0.125 0-0.25-0.047-0.359-0.141l-1-1c-0.125-0.141-0.172-0.328-0.125-0.5l1.328-4.312-4.391-4.391-4.312 1.328c-0.047 0.016-0.094 0.016-0.141 0.016-0.125 0-0.266-0.047-0.359-0.141l-1-1c-0.156-0.172-0.187-0.422-0.078-0.609l3.5-6c0.094-0.141 0.25-0.234 0.406-0.25l5.922-0.313c0.938-1.109 1.859-2.141 2.75-3.047 3.906-3.891 6.891-5.141 12.328-5.141 0.281 0 0.531 0.219 0.531 0.5z">
-                            </path>
-                        </svg>
+                <div class="items-panel__column">
+                    <div class="items-panel__round-panel">
+                        <div class="round-panel">
+                            <svg class="icon icon_color_white icon__rocket">
+                                <use xlink:href="#icon-rocket"></use>
+                            </svg>
+                        </div>
                     </div>
                     <article>
-                        <h2 class="heading items-panel__heading heading_style_items-panel">
-                            Aliquam tincidunt</h3>
-                            <p class="paragraph paragraph_hyphened">
-                                Donec nec justo eget
-                                felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
-                                pellentesq
-                                <a href="#" class="link items-panel__link">=> more</a>
-                            </p>
+                        <div class="items-panel__heading">
+                            <h2 class="heading">
+                                Aliquam tincidunt</h2>
+                        </div>
+                        <p class="paragraph paragraph_hyphened">
+                            Donec nec justo eget
+                            felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
+                            pellentesq
+                            <a href="#" class="link items-panel__link">=> more</a>
+                        </p>
                     </article>
                 </div>
-                <div class="items-panel__column-wrapper">
-                    <div class="round-panel items-panel__round-panel">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="28"
-                            viewBox="0 0 20 28">
-                            <title>shield</title>
-                            <path fill="#ffffff"
-                                d="M17 15v-10h-7v17.766c0.797-0.422 2.078-1.156 3.328-2.141 1.672-1.313 3.672-3.359 3.672-5.625zM20 3v12c0 6.578-9.203 10.734-9.594 10.906-0.125 0.063-0.266 0.094-0.406 0.094s-0.281-0.031-0.406-0.094c-0.391-0.172-9.594-4.328-9.594-10.906v-12c0-0.547 0.453-1 1-1h18c0.547 0 1 0.453 1 1z">
-                            </path>
-                        </svg>
+                <div class="items-panel__column">
+                    <div class="items-panel__round-panel">
+                        <div class="round-panel">
+                            <svg class="icon icon_color_white icon__shield">
+                                <use xlink:href="#icon-shield"></use>
+                            </svg>
+                        </div>
                     </div>
                     <article>
-                        <h2 class="heading items-panel__heading heading_style_items-panel">
-                            Cras ornare tristiqu</h3>
-                            <p class="paragraph paragraph_hyphened">
-                                Jonec nec justo eget
-                                felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean
-                                dignissim pellentesq
-                                <a href="#" class="link items-panel__link">=> more</a>
-                            </p>
+                        <div class="items-panel__heading">
+                            <h2 class="heading">
+                                Cras ornare tristiqu</h2>
+                        </div>
+                        <p class="paragraph paragraph_hyphened">
+                            Jonec nec justo eget
+                            felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean
+                            dignissim pellentesq
+                            <a href="#" class="link items-panel__link">=> more</a>
+                        </p>
                     </article>
                 </div>
-                <div class="items-panel__column-wrapper">
-                    <div class="round-panel items-panel__round-panel">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="22" height="28"
-                            viewBox="0 0 22 28">
-                            <title>fire-extinguisher</title>
-                            <path fill="#ffffff"
-                                d="M8 3c0-0.547-0.453-1-1-1s-1 0.453-1 1 0.453 1 1 1 1-0.453 1-1zM22 2.5v5c0 0.156-0.063 0.297-0.187 0.391-0.094 0.078-0.203 0.109-0.313 0.109-0.031 0-0.063 0-0.109-0.016l-7-1.5c-0.219-0.047-0.391-0.25-0.391-0.484h-4v1.594c2.281 0.469 4 2.484 4 4.906v12.5c0 0.547-0.453 1-1 1h-8c-0.547 0-1-0.453-1-1v-12.5c0-2.234 1.469-4.141 3.5-4.766v-1.734h-0.5c-3.313 0-5.094 3.422-5.109 3.453-0.172 0.344-0.531 0.547-0.891 0.547-0.156 0-0.313-0.031-0.453-0.109-0.484-0.25-0.688-0.844-0.438-1.344 0.078-0.156 1.641-3.187 4.781-4.203-0.234-0.391-0.391-0.844-0.391-1.344 0-1.375 1.125-2.5 2.5-2.5s2.5 1.125 2.5 2.5c0 0.359-0.078 0.688-0.219 1h4.719c0-0.234 0.172-0.438 0.391-0.484l7-1.5c0.047-0.016 0.078-0.016 0.109-0.016 0.109 0 0.219 0.031 0.313 0.109 0.125 0.094 0.187 0.234 0.187 0.391z">
-                            </path>
-                        </svg>
+                <div class="items-panel__column">
+                    <div class="items-panel__round-panel">
+                        <div class="round-panel">
+                            <svg class="icon icon_color_white icon__fire-extinguisher">
+                                <use xlink:href="#icon-fire-extinguisher"></use>
+                            </svg>
+                        </div>
                     </div>
                     <article>
-                        <h2 class="heading items-panel__heading heading_style_items-panel">
-                            Vivamus vestibulum</h3>
-                            <p class="paragraph paragraph_hyphened">
-                                Conec nec justo eget
-                                felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean
-                                dignissim pellentesq
-                                <a href="#" class="link items-panel__link">=> more</a>
-                            </p>
+                        <div class="items-panel__heading">
+                            <h2 class="heading">
+                                Vivamus vestibulum</h2>
+                        </div>
+                        <p class="paragraph paragraph_hyphened">
+                            Conec nec justo eget
+                            felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean
+                            dignissim pellentesq
+                            <a href="#" class="link items-panel__link">=> more</a>
+                        </p>
                     </article>
                 </div>
             </div>
         </section>
-
         <section class="main">
             <div class="main__content-block">
                 <div class="articles">
-                    <div class="articles__text-wrapper">
-                        <h2 class="heading articles__heading">
-                            Donec
-                            nec justo eget felis facilisis fermentum. Aliquam porttitor
-                            sit amet orci. Aenean dignissim pellentesque felis</h3>
-                            <div class="articles__colored-text">
-                                Civamus vestibulum
-                                nulla nec ante</div>
-                            <div class="articles__contents-wrapper">
-                                <article class="articles__column-wrapper">
-                                    <h3 class="articles__subheading">
-                                        Sed egestas anteet </h5>
-                                        <p class="paragraph articles__paragraph">Eros pede semper
-                                            est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus
-                                            adipiscing,
-                                            commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit
-                                            tortor.
-                                            Ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare
-                                            nisl.
-                                        </p>
-                                        <button class="button articles__button">More</button>
-                                </article>
-                                <article class="articles__column-wrapper">
-                                    <h3 class="articles__subheading">
-                                        Aenean egestas anteet </h5>
-                                        <p class="paragraph articles__paragraph">Lorem pede
-                                            semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus
-                                            adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum
-                                            hendrerit
-                                            tortor. Ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien
-                                            ornare
-                                            nisl. </p>
-                                        <button class="button articles__button">More</button>
-                                </article>
-                            </div>
+                    <div class="articles__text">
+                        <div class="articles__heading">
+                            <h2 class="heading">
+                                Donec
+                                nec justo eget felis facilisis fermentum. Aliquam porttitor
+                                sit amet orci. Aenean dignissim pellentesque felis</h2>
+                        </div>
+                        <div class="articles__colored-text">
+                            Civamus vestibulum
+                            nulla nec ante</div>
+                        <div class="articles__contents">
+                            <article class="articles__column">
+                                <h3 class="articles__subheading">
+                                    Sed egestas anteet </h3>
+                                <p class="paragraph">Eros pede semper
+                                    est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus
+                                    adipiscing,
+                                    commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit
+                                    tortor.
+                                    Ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare
+                                    nisl.
+                                </p>
+                                <div class="articles__button">
+                                    <button class="button">More</button>
+                                </div>
+                            </article>
+                            <article class="articles__column">
+                                <h3 class="articles__subheading">
+                                    Aenean egestas anteet </h3>
+                                <p class="paragraph articles__paragraph">Lorem pede
+                                    semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus
+                                    adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum
+                                    hendrerit
+                                    tortor. Ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien
+                                    ornare
+                                    nisl. </p>
+                                <div class="articles__button">
+                                    <button class="button">More</button>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                     <img class="articles__image" src="static/bird.jpg" alt="Bird">
                 </div>
-                <div class="subscription-panel main__subscription-panel">
-                    <div class="subscription-panel__content">
-                        <div class="subscription-panel__citation-wrapper">
-                            <div class="round-panel subscription-panel__round-pannel round-panel_color_black">
-                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="28"
-                                    viewBox="0 0 20 28">
-                                    <title>user</title>
-                                    <path fill="white"
-                                        d="M20 21.859c0 2.281-1.5 4.141-3.328 4.141h-13.344c-1.828 0-3.328-1.859-3.328-4.141 0-4.109 1.016-8.859 5.109-8.859 1.266 1.234 2.984 2 4.891 2s3.625-0.766 4.891-2c4.094 0 5.109 4.75 5.109 8.859zM16 8c0 3.313-2.688 6-6 6s-6-2.688-6-6 2.688-6 6-6 6 2.688 6 6z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h2 class="heading subscription-panel__heading heading_color_white">
-                                    Donec nec justo eget
-                                </h2>
+                <div class="main__subscription-panel">
+                    <div class="subscription-panel">
+                        <div class="subscription-panel__content-block">
+                            <div class="subscription-panel__citation">
+                                <div class="subscription-panel__round-pannel">
+                                    <div class="round-panel round-panel_color_black">
+                                        <svg class="icon icon_color_white icon__user">
+                                            <use xlink:href="#icon-user"></use>
+                                        </svg>
+                                    </div>
+                                </div>
                                 <div>
-                                    <q class="subscription-panel__quote"> Ede semper est, vitae luctus
-                                        metus libero eu augue. Morb sipo
-                                        ipiscing, commodo quis, gravida ...</q>
-                                    <span class="subscription-panel__author"> - Kohn Doe / company name</span>
+                                    <div class="subscription-panel__heading">
+                                        <h2 class="heading heading_color_white">
+                                            Donec nec justo eget
+                                        </h2>
+                                    </div>
+                                    <div>
+                                        <q class="subscription-panel__quote"> Ede semper est, vitae luctus
+                                            metus libero eu augue. Morb sipo
+                                            ipiscing, commodo quis, gravida ...</q>
+                                        <span class="subscription-panel__author"> - Kohn Doe / company name</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div>
-                            <h2 class="heading subscription-panel__heading heading_color_white">
-                                Morbi vitae luctus</h2>
-                            <form class="subscription-panel__form" id="subscription" action="" enctype="text/plain"
-                                name="subscription">
-                                <input class="input subscription-panel__input" type="email" name="mail"
-                                    placeholder="eneter your email id here ..." required>
-                                <button class="button button_color_dark subscription-panel__button"
-                                    type="submit">Subscribe
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px"
-                                        height="14px" viewBox="0 0 27 25">
-                                        <title>long-arrow-right</title>
-                                        <path fill="#ffffff"
-                                            d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z">
-                                        </path>
-                                    </svg></button>
-                            </form>
+                            <div>
+                                <div class="subscription-panel__heading">
+                                    <h2 class="heading heading_color_white">
+                                        Morbi vitae luctus</h2>
+                                </div>
+                                <form class="subscription-panel__form" id="subscription" action="" enctype="text/plain"
+                                    name="subscription">
+                                    <div class="subscription-panel__input">
+                                        <input class="input" type="email" name="mail"
+                                            placeholder="eneter your email id here ..." required>
+                                    </div>
+                                    <button class="button button_color_dark"
+                                        type="submit">Subscribe
+                                        <svg class="icon icon_color_white icon__long-arrow-right">
+                                            <use xlink:href="#icon-long-arrow-right"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Coninue with this shred -->
                 <div class="info-panel">
                     <div class="info-panel__column-wrapper">
-                        <h2 class="heading info-panel__column-heading">
-                            Aliquam tincidunt</h2>
+                        <div class="info-panel__column-heading">
+                            <h2 class="heading">
+                                Aliquam tincidunt</h2>
+                        </div>
                         <div class="info-panel__line-container">
                             <img src="static/face.jpg" alt="Women" class="info-pannel__round-image"></img>
                             <div>
-                                <p class="paragraph paragraph_hyphened info-panel__paragraph">
+                                <p class="paragraph paragraph_hyphened">
                                     Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
-                                    <a href="#" class="link info-panel__link">
-                                        more =></a>
+                                    <span class="info-panel__link">
+                                        <a href="#" class="link">
+                                            more =></a>
+                                    </span>
                                 </p>
                             </div>
                         </div>
                         <div class="info-panel__line-container">
                             <img src="static/cage.jpg" alt="Cage" class="info-pannel__round-image"></img>
                             <div>
-                                <p class="paragraph paragraph_hyphened info-panel__paragraph">
+                                <p class="paragraph paragraph_hyphened">
                                     Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
-                                    <a href="#" class="link info-panel__link">
-                                        more =></a>
+                                    <span class="info-panel__link">
+                                        <a href="#" class="link">
+                                            more =></a>
+                                    </span>
                                 </p>
                             </div>
                         </div>
                         <div class="info-panel__line-container">
                             <img src="static/bird_small.jpg" alt="Bird" class="info-pannel__round-image"></img>
                             <div>
-                                <p class="paragraph paragraph_hyphened info-panel__paragraph">
+                                <p class="paragraph paragraph_hyphened">
                                     Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
-                                    <a href="#" class="link info-panel__link">
-                                        more =></a>
+                                    <span class="info-panel__link">
+                                        <a href="#" class="link">
+                                            more =></a>
+                                    </span>
                                 </p>
                             </div>
                         </div>
                     </div>
-
                     <div class="info-panel__column-wrapper">
-                        <h2 class="heading info-panel__column-heading">
-                            Nunc dignissim risu</h2>
+                        <div class="info-panel__column-heading">
+                            <h2 class="heading">
+                                Nunc dignissim risu</h2>
+                        </div>
                         <form class="form" id="register" action="" enctype="text/plain" name="register">
-                            <p class="paragraph form__paragraph">
-                                <!-- TODO: Is it worth additional <p> tag or better embed this text in the beggining of <form> tag?-->
-                                Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus liber
-                            </p>
-                            <input class="input form__input" type="text" name="name" placeholder="name ..." required>
-                            <input class="input form__input" type="email" name="mail" placeholder="email ..." required>
-                            <textarea class="input form__input form__input_high" name="query"
-                                placeholder="your query ..." required></textarea>
-                            <button class="button form__button" type="submit">Send
-                                <svg class="form__button-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px"
-                                    y="0px" width="13px" height="14px" viewBox="0 0 27 25">
-                                    <title>long-arrow-right</title>
-                                    <path fill="#ffffff"
-                                        d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z">
-                                    </path>
-                                </svg></button>
+                            <div class="form__paragraph">
+                                <p class="paragraph">
+                                    Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus
+                                    liber
+                                </p>
+                            </div>
+                            <div class="form__input">
+                                <input class="input" type="text" name="name" placeholder="name ..." required>
+                            </div>
+                            <div class="form__input">
+                                <input class="input" type="email" name="mail" placeholder="email ..." required>
+                            </div>
+                            <div class="form__input">
+                                <textarea class="form__textarea" name="query" placeholder="your query ..."
+                                    required></textarea>
+                            </div>
+                            <button class="button" type="submit">Send
+                                <div class="button__arrow">
+                                    <svg class="icon icon_color_white icon__long-arrow-right">
+                                        <use xlink:href="#icon-long-arrow-right"></use>
+                                    </svg>
+                                </div>
+                            </button>
                         </form>
                     </div>
-
                     <div class="info-panel__column-wrapper">
-                        <h2 class="heading info-panel__column-heading">
-                            Aliquam tincidunt</h2>
+                        <div class="info-panel__column-heading">
+                            <h2 class="heading">
+                                Aliquam tincidunt</h2>
+                        </div>
                         <div class="info-panel__info-container">
-                            <svg class="info-panel__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="26"
-                                height="28" viewBox="0 0 26 28">
-                                <title>home</title>
-                                <path
-                                    d="M22 15.5v7.5c0 0.547-0.453 1-1 1h-6v-6h-4v6h-6c-0.547 0-1-0.453-1-1v-7.5c0-0.031 0.016-0.063 0.016-0.094l8.984-7.406 8.984 7.406c0.016 0.031 0.016 0.063 0.016 0.094zM25.484 14.422l-0.969 1.156c-0.078 0.094-0.203 0.156-0.328 0.172h-0.047c-0.125 0-0.234-0.031-0.328-0.109l-10.813-9.016-10.813 9.016c-0.109 0.078-0.234 0.125-0.375 0.109-0.125-0.016-0.25-0.078-0.328-0.172l-0.969-1.156c-0.172-0.203-0.141-0.531 0.063-0.703l11.234-9.359c0.656-0.547 1.719-0.547 2.375 0l3.813 3.187v-3.047c0-0.281 0.219-0.5 0.5-0.5h3c0.281 0 0.5 0.219 0.5 0.5v6.375l3.422 2.844c0.203 0.172 0.234 0.5 0.063 0.703z">
-                                </path>
-                            </svg>
+                            <div class="info-panel__icon">
+                                <svg class="icon icon__home">
+                                    <use xlink:href="#icon-home"></use>
+                                </svg>
+                            </div>
                             <div>
                                 <h3 class="info-panel__heading">
                                     Address</h3>
@@ -329,13 +388,11 @@
                             </div>
                         </div>
                         <div class="info-panel__info-container">
-                            <svg class="info-panel__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="28" viewBox="0 0 24 28">
-                                <title>phone-square</title>
-                                <path
-                                    d="M20 18.641c0-0.078 0-0.172-0.031-0.25-0.094-0.281-2.375-1.437-2.812-1.687-0.297-0.172-0.656-0.516-1.016-0.516-0.688 0-1.703 2.047-2.312 2.047-0.313 0-0.703-0.281-0.984-0.438-2.063-1.156-3.484-2.578-4.641-4.641-0.156-0.281-0.438-0.672-0.438-0.984 0-0.609 2.047-1.625 2.047-2.312 0-0.359-0.344-0.719-0.516-1.016-0.25-0.438-1.406-2.719-1.687-2.812-0.078-0.031-0.172-0.031-0.25-0.031-0.406 0-1.203 0.187-1.578 0.344-1.031 0.469-1.781 2.438-1.781 3.516 0 1.047 0.422 2 0.781 2.969 1.25 3.422 4.969 7.141 8.391 8.391 0.969 0.359 1.922 0.781 2.969 0.781 1.078 0 3.047-0.75 3.516-1.781 0.156-0.375 0.344-1.172 0.344-1.578zM24 6.5v15c0 2.484-2.016 4.5-4.5 4.5h-15c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15c2.484 0 4.5 2.016 4.5 4.5z">
-                                </path>
-                            </svg>
+                            <div class="info-panel__icon">
+                                <svg class="icon icon__phone-square">
+                                    <use xlink:href="#icon-phone-square"></use>
+                                </svg>
+                            </div>
                             <div>
                                 <h3 class="info-panel__heading">
                                     Phone</h3>
@@ -345,13 +402,11 @@
                             </div>
                         </div>
                         <div class="info-panel__info-container">
-                            <svg class="info-panel__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="28"
-                                height="28" viewBox="0 0 28 28">
-                                <title>envelope</title>
-                                <path
-                                    d="M28 11.094v12.406c0 1.375-1.125 2.5-2.5 2.5h-23c-1.375 0-2.5-1.125-2.5-2.5v-12.406c0.469 0.516 1 0.969 1.578 1.359 2.594 1.766 5.219 3.531 7.766 5.391 1.313 0.969 2.938 2.156 4.641 2.156h0.031c1.703 0 3.328-1.188 4.641-2.156 2.547-1.844 5.172-3.625 7.781-5.391 0.562-0.391 1.094-0.844 1.563-1.359zM28 6.5c0 1.75-1.297 3.328-2.672 4.281-2.438 1.687-4.891 3.375-7.313 5.078-1.016 0.703-2.734 2.141-4 2.141h-0.031c-1.266 0-2.984-1.437-4-2.141-2.422-1.703-4.875-3.391-7.297-5.078-1.109-0.75-2.688-2.516-2.688-3.938 0-1.531 0.828-2.844 2.5-2.844h23c1.359 0 2.5 1.125 2.5 2.5z">
-                                </path>
-                            </svg>
+                            <div class="info-panel__icon">
+                                <svg class="icon icon__envelope">
+                                    <use xlink:href="#icon-envelope"></use>
+                                </svg>
+                            </div>
                             <div>
                                 <h3 class="info-panel__heading">
                                     Email us</h3>
@@ -399,34 +454,25 @@
                     Copyright(c) website name.
                 </address>
             </div>
-
-            <div class="footer__rounds-wrapper">
+            <div class="footer__socials">
                 <a href="http://facebook.com" class="footer__round-link">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="28" viewBox="0 0 16 28">
-                        <title>facebook</title>
-                        <path fill="#ffffff"
-                            d="M14.984 0.187v4.125h-2.453c-1.922 0-2.281 0.922-2.281 2.25v2.953h4.578l-0.609 4.625h-3.969v11.859h-4.781v-11.859h-3.984v-4.625h3.984v-3.406c0-3.953 2.422-6.109 5.953-6.109 1.687 0 3.141 0.125 3.563 0.187z">
-                        </path>
+                    <svg class="icon icon_color_white icon__facebook">
+                        <use xlink:href="#icon-facebook"></use>
                     </svg>
                 </a>
                 <a href="http://twitter.com" class="footer__round-link">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28">
-                        <title>twitter</title>
-                        <path fill="#ffffff"
-                            d="M25.312 6.375c-0.688 1-1.547 1.891-2.531 2.609 0.016 0.219 0.016 0.438 0.016 0.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-0.828-7.75-2.266 0.406 0.047 0.797 0.063 1.219 0.063 2.359 0 4.531-0.797 6.266-2.156-2.219-0.047-4.078-1.5-4.719-3.5 0.313 0.047 0.625 0.078 0.953 0.078 0.453 0 0.906-0.063 1.328-0.172-2.312-0.469-4.047-2.5-4.047-4.953v-0.063c0.672 0.375 1.453 0.609 2.281 0.641-1.359-0.906-2.25-2.453-2.25-4.203 0-0.938 0.25-1.797 0.688-2.547 2.484 3.062 6.219 5.063 10.406 5.281-0.078-0.375-0.125-0.766-0.125-1.156 0-2.781 2.25-5.047 5.047-5.047 1.453 0 2.766 0.609 3.687 1.594 1.141-0.219 2.234-0.641 3.203-1.219-0.375 1.172-1.172 2.156-2.219 2.781 1.016-0.109 2-0.391 2.906-0.781z">
-                        </path>
+                    <svg class="icon icon_color_white icon__twitter">
+                        <use xlink:href="#icon-twitter"></use>
                     </svg>
                 </a>
                 <a href="http://linkedin.com" class="footer__round-link">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28">
-                        <title>linkedin</title>
-                        <path fill="#ffffff"
-                            d="M5.453 9.766v15.484h-5.156v-15.484h5.156zM5.781 4.984c0.016 1.484-1.109 2.672-2.906 2.672v0h-0.031c-1.734 0-2.844-1.188-2.844-2.672 0-1.516 1.156-2.672 2.906-2.672 1.766 0 2.859 1.156 2.875 2.672zM24 16.375v8.875h-5.141v-8.281c0-2.078-0.75-3.5-2.609-3.5-1.422 0-2.266 0.953-2.641 1.875-0.125 0.344-0.172 0.797-0.172 1.266v8.641h-5.141c0.063-14.031 0-15.484 0-15.484h5.141v2.25h-0.031c0.672-1.062 1.891-2.609 4.672-2.609 3.391 0 5.922 2.219 5.922 6.969z">
-                        </path>
+                    <svg class="icon icon_color_white icon__linkedin">
+                        <use xlink:href="#icon-linkedin"></use>
                     </svg>
                 </a>
             </div>
         </div>
     </footer>
 </body>
+
 </html>

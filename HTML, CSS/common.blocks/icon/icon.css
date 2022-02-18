@@ -1,0 +1,76 @@
+.icon {
+    display: inline-block;
+}
+
+.icon_color_white {
+    fill: white;
+}
+
+.icon_color_grey {
+    fill: #2c3031;
+}
+
+.icon__angle-left {
+    width: 11px;
+    height: 28px;
+}
+
+.icon__angle-right {
+    width: 9px;
+    height: 28px;
+}
+
+.icon__rocket {
+    width: 26px;
+    height: 28px;
+}
+
+.icon__shield {
+    width: 20px;
+    height: 28px;
+}
+
+.icon__fire-extinguisher {
+    width: 22px;
+    height: 28px;
+}
+
+.icon__user {
+    width: 20px;
+    height: 28px;
+}
+
+.icon__long-arrow-right {
+    width: 13px;
+    height: 14px;
+}
+
+.icon__home {
+    width: 26px;
+    height: 28px;
+}
+
+.icon__phone-square {
+    width: 24px;
+    height: 28px;
+}
+
+.icon__envelope {
+    width: 28px;
+    height: 28px;
+}
+
+.icon__facebook {
+    width: 16px;
+    height: 28px;
+}
+
+.icon__twitter {
+    width: 26px;
+    height: 28px;
+}
+
+.icon__linkedin {
+    width: 24px;
+    height: 28px;
+}

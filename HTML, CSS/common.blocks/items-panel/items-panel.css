@@ -16,13 +16,22 @@
     margin: 0 0 20px;
 }
 
-.items-panel__column-wrapper {
+.items-panel__column {
     display: flex;
-    width: 370px;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.items-panel__column:last-of-type {
+    margin-right: 0;
 }
 
 .items-panel__round-panel {
     margin-right: 30px;
+}
+
+.items-panel_text:last-of-type {
+    margin-right: 0;
 }
 
 .items-panel__link {

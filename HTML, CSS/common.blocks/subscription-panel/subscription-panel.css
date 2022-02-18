@@ -1,16 +1,18 @@
 .subscription-panel {
     background-color: #e84c3d;
     border-radius: 11px;
+    padding: 50px 30px;
 }
 
-.subscription-panel__content {
+.subscription-panel__content-block {
     display: flex;
     justify-content: space-between;
 }
 
-.subscription-panel__citation-wrapper {
+.subscription-panel__citation {
     display: flex;
-    width: 536px;
+    flex: 1;
+    margin-right: 60px;
 }
 
 .subscription-panel__round-pannel {
@@ -23,16 +25,12 @@
 }
 
 .subscription-panel__form {
+    display: flex;
     margin-top: 30px;
 }
 
 .subscription-panel__heading {
     margin: 0 0 25px;
-}
-
-.subscription-panel__button {
-    min-height: 41px;
-    min-width: 120px;
 }
 
 .subscription-panel__quote {

@@ -22,15 +22,18 @@
     min-width: 100px;
 }
 
-.form__button-arrow {
-    margin-left: 5px;
-}
-
-.form__input_high { /* TODO: Or it must be a modifier of input (kind of input_high)? */
-    padding-top: 10px;
-    padding-bottom: 10px; 
+.form__textarea {
+    background-color: #ffffff;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 24px;
+    color: #767c7e;
+    box-sizing: border-box;
+    padding: 10px 19px;
     resize: none;
     border-radius: 10px;
-    box-sizing: border-box;
     height: 82px;
+    width: 100%;
 }

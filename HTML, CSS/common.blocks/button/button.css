@@ -9,14 +9,14 @@
     font-size: 15px;
     letter-spacing: 0.04em;
     cursor: pointer;
-}
-
-.button__arrow-icon {
-    width: 14px;
-    height: 14px;
-    margin: auto;
+    padding: 9px 18px;
 }
 
 .button_color_dark {
     background-color: #202628;
+}
+
+.button__arrow {
+    display: inline-block;
+    margin-left: 5px;
 }

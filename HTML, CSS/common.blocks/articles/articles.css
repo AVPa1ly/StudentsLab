@@ -1,37 +1,37 @@
 .articles {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
 }
 
 .articles__heading {
     margin: 0 0 30px;
-    width: 600px;
+    width: 85%;
 }
 
-.articles__contents-wrapper {
+.articles__contents {
     display: flex;
-    justify-content: space-between;
 }
 
-.articles__text-wrapper {
-    width: 770px; /* TODO: This hardcoded value equals items-panel__column-wrapper * 2. A better solution for this kind of wrap? */
+.articles__text {
+    width: 100%; /* IE 11 Fix */
+} 
+
+.articles__column {
+    margin-right: 30px;
 }
 
-.articles__column-wrapper {
-    width: 370px;
+.articles__column:last-of-type {
+    margin-right: 0;
 }
 
 .articles__colored-text {
     font-family: 'Lato', sans-serif;
     color: #e84c3d;
     font-size: 20px;
-    width: 100%;
+    line-height: 24px;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
     padding: 12px 0;
-    margin-bottom: 29px;
-    line-height: 24px;
+    margin-bottom: 20px;
 }
 
 .articles__subheading {
@@ -39,20 +39,17 @@
     font-size: 16px;
     color: #202628;
     font-weight: bold;
-    margin: 0 0 14px;
+    margin: 0 0 5px;
     line-height: 24px;
 }
 
-.articles__paragraph {
-    margin-bottom: 38px;
-}
-
 .articles__button {
-    min-height: 37px;
-    min-width: 70px; 
+    margin-top: 25px;
 }
 
 .articles__image {
-    width: 355px;
+    min-width: 355px;
     height: 355px;
+    float: right;
+    margin-left: 46px;
 }

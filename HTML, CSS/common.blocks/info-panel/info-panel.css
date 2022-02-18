@@ -4,7 +4,12 @@
 }
 
 .info-panel__column-wrapper {
-    width: 370px;
+    margin-right: 30px;
+    flex: 1;
+}
+
+.info-panel__column-wrapper:last-of-type {
+    margin-right: 0;
 }
 
 .info-panel__column-heading {
@@ -19,7 +24,11 @@
     padding: 30px 0;
 }
 
-.info-panel__info-container { /* TODO: Not the best sollution, but it's necessary for equal block height. A better way of dealing with it? */
+.info-panel__line-container:last-of-type {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.info-panel__info-container {
     display: flex;
     align-items: center;
     width: 100%;
@@ -27,22 +36,14 @@
     padding: 26px 0;
 }
 
-.info-panel__line-container:last-of-type {
-    border-bottom: 1px solid #e7e7e7;
-}
-
 .info-panel__info-container:last-of-type {
     border-bottom: 1px solid #e7e7e7;
 }
 
 .info-pannel__round-image {
-    width: 70px;
+    min-width: 70px;
     height: 70px;
     margin-right: 30px;
-}
-
-.info-panel__paragraph {
-    margin: 0;
 }
 
 .info-panel__link {
