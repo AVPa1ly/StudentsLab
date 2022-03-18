@@ -1,0 +1,39 @@
+.form {
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    padding: 29px 30px;
+}
+
+.form__input {
+    width: 310px;
+    margin-bottom: 20px;
+}
+
+.form__input:first-child {
+    margin-top: 29px;
+}
+
+.form__paragraph {
+    margin: 0 0 30px;
+}
+
+.form__button {
+    min-height: 41px;
+    min-width: 100px;
+}
+
+.form__textarea {
+    background-color: #ffffff;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 24px;
+    color: #767c7e;
+    box-sizing: border-box;
+    padding: 10px 19px;
+    resize: none;
+    border-radius: 10px;
+    height: 82px;
+    width: 100%;
+}

@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__item {
+    display: block;
+    text-align: center;
+    padding: 32.5px 0;
+    min-width: 75px;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 13px;
+    color: #e7e7e7;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+}
+
+.navbar__item:hover {
+    background-color: #e84c3d;
+}

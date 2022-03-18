@@ -1,0 +1,22 @@
+.button {
+    border: none;
+    background-color: #e84c3d;
+    border-radius: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    padding: 9px 18px;
+}
+
+.button_color_dark {
+    background-color: #202628;
+}
+
+.button__arrow {
+    display: inline-block;
+    margin-left: 5px;
+}

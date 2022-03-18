@@ -1,0 +1,12 @@
+.heading {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: lighter;
+    font-size: 21px;
+    letter-spacing: 0.04em;
+    color: #202628;
+    text-transform: uppercase;
+}
+
+.heading_color_white {
+    color: white;
+}

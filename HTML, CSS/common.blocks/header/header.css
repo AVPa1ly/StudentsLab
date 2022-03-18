@@ -1,0 +1,21 @@
+.header {
+    background-color: #202628;
+}
+
+.header__content-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    min-height: 80px;
+}
+
+.header__sitename {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 25px;
+    color: #e7e7e7;
+    text-transform: uppercase;
+}

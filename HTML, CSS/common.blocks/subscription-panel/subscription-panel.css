@@ -1,0 +1,50 @@
+.subscription-panel {
+    background-color: #e84c3d;
+    border-radius: 11px;
+    padding: 50px 30px;
+}
+
+.subscription-panel__content-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscription-panel__citation {
+    display: flex;
+    flex: 1;
+    margin-right: 60px;
+}
+
+.subscription-panel__round-pannel {
+    margin-right: 30px;
+}
+
+.subscription-panel__input {
+    width: 380px;
+    margin-right: 9px;
+}
+
+.subscription-panel__form {
+    display: flex;
+    margin-top: 30px;
+}
+
+.subscription-panel__heading {
+    margin: 0 0 25px;
+}
+
+.subscription-panel__quote {
+    font-family: 'Lato', sans-serif;
+    line-height: 24px;
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.subscription-panel__author {
+    font-family: 'Lato', sans-serif;
+    line-height: 24px;
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+}

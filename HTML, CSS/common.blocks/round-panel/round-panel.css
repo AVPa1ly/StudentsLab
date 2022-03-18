@@ -1,0 +1,13 @@
+.round-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 70px;
+    height: 70px;
+    background-color: #e84c3d;
+    border-radius: 50%;
+}
+
+.round-panel_color_black {
+    background-color: #202628;
+}
